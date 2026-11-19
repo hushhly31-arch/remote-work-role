@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     }));
 
     const summary = [
-      `Project: AW-2026-047 — Remote Work Training Submission`,
+      `Project: TDA-2026-012 — Remote Work Training Submission`,
       `Submitted at: ${meta.submittedAt || new Date().toISOString()}`,
       `Time used: ${meta.timeUsed || 'n/a'}`,
       '',
@@ -60,7 +60,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         from: 'Remote Work Training <onboarding@resend.dev>',
         to: [TO_EMAIL],
-        subject: `AW-2026-047 Submission${meta.timeUsed ? ` (${meta.timeUsed})` : ''}`,
+        subject: `TDA-2026-012 Submission${meta.timeUsed ? ` (${meta.timeUsed})` : ''}`,
         text: summary,
         html,
         attachments,

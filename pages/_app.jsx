@@ -39,18 +39,18 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Remote Work Training — Nuha Simulation</title>
+        <title>Remote Work Training — Simulasi Koordinator Remote</title>
         <meta
           name="description"
-          content="Single-session remote work simulation for architectural designers. 60 minutes, one contract, one deliverable set."
+          content="Simulasi kerja remote 60 menit untuk calon Ops Coordinator, Project Coordinator, dan Trainee. Satu paket kerja, tiga deliverables, dinilai dengan rubrik."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Remote Work Training — Nuha Simulation" />
-        <meta property="og:description" content="Single-session remote work simulation for architectural designers. 60 minutes, one contract, one deliverable set." />
+        <meta property="og:title" content="Remote Work Training — Simulasi Koordinator Remote" />
+        <meta property="og:description" content="Simulasi kerja remote 60 menit untuk calon Ops Coordinator, Project Coordinator, dan Trainee. Satu paket kerja, tiga deliverables, dinilai dengan rubrik." />
         <meta property="og:url" content="/" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Remote Work Training — Nuha Simulation" />
-        <meta name="twitter:description" content="Single-session remote work simulation for architectural designers. 60 minutes, one contract, one deliverable set." />
+        <meta name="twitter:title" content="Remote Work Training — Simulasi Koordinator Remote" />
+        <meta name="twitter:description" content="Simulasi kerja remote 60 menit untuk calon Ops Coordinator, Project Coordinator, dan Trainee. Satu paket kerja, tiga deliverables, dinilai dengan rubrik." />
       </Head>
 
       <Layout>

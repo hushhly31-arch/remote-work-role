@@ -49,7 +49,7 @@ const SubmitPage = () => {
       setTimeRemaining(remaining);
       if (remaining === 0 && !submitted) {
         clearInterval(timerRef.current);
-        alert('Time expired. Contract void.');
+        alert('Waktu habis. Perjanjian batal.');
       }
     }, 1000);
     return () => clearInterval(timerRef.current);
@@ -90,15 +90,15 @@ const SubmitPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (wordCount(email) > 120) {
-      alert('Email exceeds 120 words. Current: ' + wordCount(email));
+      alert('Email melebihi 120 kata. Sekarang: ' + wordCount(email));
       return;
     }
     if (!validateQA()) {
-      alert('All QA checkboxes must be checked honestly.');
+      alert('Semua checkbox QA harus dicentang dengan jujur.');
       return;
     }
     if (files.length === 0) {
-      alert('At least one file required.');
+      alert('Minimal satu file wajib diunggah.');
       return;
     }
 
@@ -124,7 +124,7 @@ const SubmitPage = () => {
           submittedAt: new Date(now).toISOString(),
           timeUsed: formatTime(usedSec),
           qaCheckedCount: Object.values(qaChecks).filter(Boolean).length,
-          projectCode: 'AW-2026-047',
+          projectCode: 'TDA-2026-012',
         },
       };
 
@@ -208,7 +208,7 @@ const SubmitPage = () => {
                 <input
                   type="file"
                   multiple
-                  accept=".dwg,.pdf,.jpg"
+                  accept=".pdf,.doc,.docx,.xlsx,.csv,.txt,.md"
                   onChange={handleFileChange}
                   style={{ 
                     display: 'block', 

@@ -21,25 +21,21 @@ const MaterialsPage = () => {
 
       <div className="section-block">
         <h3>{m.sketch.title}</h3>
-        <figure style={{ margin: 0 }}>
-          <img src={m.sketch.image || '/img/refs/unit-sketch.svg'} alt={m.sketch.imageAlt || 'Concept sketch reference'} style={{ width: '100%', maxWidth: 900, border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)', background: '#fff' }} />
-          <figcaption className="text-muted" style={{ fontSize: '0.875rem', marginTop: '0.5rem' }}>{m.sketch.caption || m.sketch.description}</figcaption>
-        </figure>
-        <details style={{ marginTop: '1rem' }}>
-          <summary className="fw-semibold" style={{ cursor: 'pointer' }}>{m.sketch.notesTitle || 'Sketch notes'}</summary>
+        <details open style={{ marginTop: '0.5rem' }}>
+          <summary className="fw-semibold" style={{ cursor: 'pointer' }}>{m.sketch.notesTitle || 'Notes'}</summary>
           <pre className="text-mono" style={{ whiteSpace: 'pre-wrap', lineHeight: 1.7, fontSize: '0.9rem', background: 'var(--bg-warm)', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-light)', margin: '0.75rem 0 0' }}>
 {inputMaterials.sketchDescription}
           </pre>
         </details>
+        <p className="text-muted" style={{ fontSize: '0.875rem', marginTop: '0.75rem', marginBottom: 0 }}>{m.sketch.caption || m.sketch.description}</p>
       </div>
 
       <div className="section-block">
         <h3>{m.sitePhotos.title}</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
-          {(m.sitePhotos.items || m.sitePhotos.photos.map((text) => ({ text, image: '/img/refs/plan-reference.svg' }))).map((p, i) => (
-            <div key={i} style={{ background: 'var(--bg-warm)', border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)', overflow: 'hidden' }}>
-              <img src={p.image || '/img/refs/plan-reference.svg'} alt={p.alt || `Reference ${i + 1}`} style={{ width: '100%', height: 170, objectFit: 'cover', background: '#fff', borderBottom: '1px solid var(--border-light)' }} />
-              <p style={{ padding: '0.75rem', margin: 0, fontSize: '0.92rem' }}>{p.text}</p>
+          {(m.sitePhotos.items || m.sitePhotos.photos.map((text) => ({ text }))).map((p, i) => (
+            <div key={i} style={{ background: 'var(--bg-warm)', border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)', padding: '0.75rem' }}>
+              <p style={{ margin: 0, fontSize: '0.92rem' }}>{p.text}</p>
             </div>
           ))}
         </div>
@@ -48,10 +44,10 @@ const MaterialsPage = () => {
       <div className="section-block">
         <h3>{m.asBuilt.title}</h3>
         <div className="document-text" style={{ marginBottom: '1rem' }}>
-          <p><strong>Scale:</strong> {m.asBuilt.scale} | <strong>Paper:</strong> {m.asBuilt.paper} | <strong>Date:</strong> {m.asBuilt.notes}</p>
+          <p><strong>Versi:</strong> {m.asBuilt.scale} | <strong>Format:</strong> {m.asBuilt.paper} | <strong>Catatan:</strong> {m.asBuilt.notes}</p>
         </div>
 
-        <h4>Dimensions (mm, internal face of wall)</h4>
+        <h4>Data Kunci (dari spreadsheet master)</h4>
         <div className="table-responsive">
           <table className="table">
             <tbody>
@@ -95,8 +91,8 @@ const MaterialsPage = () => {
           {m.asBuilt.errors.map((e) => (
             <div key={e.id} style={{ background: 'var(--bg-card)', border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)', padding: '1.25rem' }}>
               <h4 style={{ marginTop: 0 }}>{e.location}</h4>
-              <p className="mb-1"><strong>Given:</strong> {e.given}</p>
-              <p className="mb-0"><strong>Issue:</strong> {e.issue}</p>
+              <p className="mb-1"><strong>Tertulis:</strong> {e.given}</p>
+              <p className="mb-0"><strong>Masalah:</strong> {e.issue}</p>
             </div>
           ))}
         </div>

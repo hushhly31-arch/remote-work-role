@@ -37,7 +37,7 @@ export default function LoginPage() {
       <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem', background: 'var(--bg-page, #f6f3ee)' }}>
         <div className="card" style={{ width: '100%', maxWidth: 420, background: 'var(--bg-card, #fff)', border: '1px solid var(--border-light, #e5e7eb)', borderRadius: 'var(--radius-lg, 12px)', boxShadow: '0 8px 30px rgba(0,0,0,0.06)' }}>
           <div className="card-body" style={{ padding: '2rem' }}>
-            <p className="eyebrow" style={{ marginBottom: '0.25rem' }}>{t?.common?.projectCode || 'AW-2026-047'}</p>
+            <p className="eyebrow" style={{ marginBottom: '0.25rem' }}>{t?.common?.projectCode || 'TDA-2026-012'}</p>
             <h1 className="page-title-main" style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>Login</h1>
             <p className="text-secondary" style={{ marginBottom: '1.5rem', fontSize: '0.95rem' }}>{t?.common?.appName || 'Remote Work Training'}</p>
             <form onSubmit={onSubmit}>
