@@ -1,7 +1,7 @@
 export const common = {
   appName: "Remote Work Training",
-  projectCode: "AW-2026-047",
-  studioName: "Axel & Wright Architects",
+  projectCode: "TDA-2026-012",
+  studioName: "Terra Digital Agency",
   timeRemaining: "Time Remaining",
   next: "Next",
   submit: "Submit",
@@ -27,7 +27,7 @@ export const common = {
 
 export const navigation = {
   intro: "Introduction",
-  contract: "Contract",
+  contract: "Agreement",
   brief: "Brief",
   materials: "Materials",
   deliverables: "Deliverables",
@@ -39,160 +39,160 @@ export const navigation = {
 
 export const intro = {
   title: "Introduction",
-  subtitle: "AW-2026-047 — Co-Living Unit Fit-Out, Diponegoro Site",
+  subtitle: "TDA-2026-012 — Trial Week: Junior Project Coordinator (Remote, WIB)",
   pembuka: {
     title: "Opening",
-    content: "A Melbourne studio offers you one job: Co-Living Unit Fit-Out, Diponegoro Site, code AW-2026-047. The contract has been sent. You have 60 minutes from pressing Start. This is a simulation — no real client — but treat it like the real thing."
+    content: "A digital agency in Jakarta is offering you a remote Junior Project Coordinator role — trial week, code TDA-2026-012. Your first work package has been sent. You have 60 minutes from pressing Start. This is a simulation — no real clients, but it is treated as real."
   },
   situasi: {
-    title: "The Situation",
-    content: "Axel & Wright Architects, Melbourne — 8 architects, 3 interior designers. Focus: residential, co-living, small commercial. Communication via Slack, Google Drive, email. Melbourne timezone in November uses daylight saving (AEDT, UTC+11), 4 hours ahead of Pamekasan (WIB)."
+    title: "Situation",
+    content: "Terra Digital Agency, Jakarta — a 12-person remote team: designers, developers, customer service, ops. Main clients: Client A (website retainer) and Client B (a 100-person webinar). Communication runs on Slack, Trello, Zoom, and email. You work from WIB hours; part of client correspondence is in written English."
   },
   peran: {
     title: "Your Role",
-    content: "Remote Architectural Designer, project-based, single engagement. Expected to produce working drawings for a co-living unit (plan, RCP, elevations, render) from provided as-built and sketch. Work asynchronously, written communication in English, self-managed time. Output submitted via platform, reviewed by Senior Architect."
+    content: "Junior Project Coordinator, remote, WIB. In short: making sure projects finish on scope, on time, and on budget — breaking projects into tasks with deadlines and owners, managing the board (Trello/Asana), taking meeting notes, chasing progress, surfacing blockers and escalating them, acting as the client–team bridge, and writing status reports. Output is submitted through the platform and reviewed by the Project Manager and Head of Delivery."
   },
   aturan: {
     title: "Simulation Rules",
     items: [
-      "60-minute timer starts when you press Start, not when the page loads.",
-      "Timer cannot be paused.",
-      "You may submit any time before time expires. Early submit only counts as a bonus if quality passes.",
-      "If time runs out before submit, the contract determines consequences (void, no payment).",
-      "After submit, no changes allowed.",
-      "Session cannot be repeated with the same scenario. [Confirmation: repeatable? first attempt credential still valid?]",
-      "Allowed tools: SketchUp, D5 Render, Lumion, AutoCAD or any drawing software you master, Word, Excel, Google Sheets. [Confirmation: AI, internet references, personal templates allowed?]",
-      "Contract is read and decided by you. Platform will not tell you what's correct."
+      "The 60-minute timer starts when you press Start, not when the page opens.",
+      "The timer cannot be paused.",
+      "You may submit any time before time runs out. Early submit only counts as a bonus if quality passes.",
+      "If time runs out before you submit, the agreement defines the consequences (void, no pay).",
+      "After submitting, nothing can be changed.",
+      "You can retake the session, but the credential is based on the attempt you choose in the next session.",
+      "Allowed tools: Google Docs/Sheets, Notion, Trello/Asana, calculator. Personal templates are allowed.",
+      "You read the agreement and materials on your own. The platform will not tell you what is right."
     ]
   },
   tahapan: {
     title: "6 Stages & Estimated Time",
-    totalNote: "Total: ~90 minutes — but hard limit is 60 minutes. Plan your work once.",
+    totalNote: "Total: ~90 minutes — but the hard limit is 60 minutes. Plan to do it in one pass.",
     stages: [
-      { step: 1, name: "Contract", desc: "Read full contract, find 2 problematic clauses, choose Accept or Accept with notes", time: "8 min" },
-      { step: 2, name: "Brief", desc: "Read PM message, understand room program, budget, decided/undecided items", time: "5 min" },
-      { step: 3, name: "Materials", desc: "Check sketch, site photos, as-built — find 2 dimensional errors", time: "5 min" },
-      { step: 4, name: "Deliverables", desc: "Core work: plan+RCP (25'), 2 elevations (15'), render (10')", time: "50 min" },
-      { step: 5, name: "Disruption", desc: "One message arrives ~minute 25 from client/PM, reply in 5 min, continue working", time: "5 min" },
-      { step: 6, name: "Submit", desc: "Upload files, email PM ≤120 words, assumptions, as-built errors, QA checklist", time: "7 min" }
+      { step: 1, name: "Agreement", desc: "Read the full agreement, find 3 problematic clauses, choose Accept or Accept with notes", time: "8 minutes" },
+      { step: 2, name: "Brief", desc: "Read the manager's message: two active projects, decided vs. undecided items", time: "5 minutes" },
+      { step: 3, name: "Materials", desc: "Check the meeting transcript, Slack messages, master spreadsheet — find 2 data errors", time: "5 minutes" },
+      { step: 4, name: "Deliverables", desc: "Core work: meeting notes (25'), timeline + risk log (15'), daily update (10')", time: "50 minutes" },
+      { step: 5, name: "Disruption", desc: "One message arrives ~minute 25 from the client/PM; reply within 5 minutes, keep working", time: "5 minutes" },
+      { step: 6, name: "Submit", desc: "Hand in documents, email to manager ≤120 words, data findings, QA checklist", time: "7 minutes" }
     ]
   },
   dinilai: {
-    title: "What Gets Assessed (6 Criteria)",
+    title: "What Is Scored (6 Criteria)",
     criteria: [
-      { key: "contract", label: "Contract Reading", desc: "Identify problematic clauses and write specific counter-notes." },
-      { key: "errors", label: "Material Verification", desc: "Detect both as-built dimensional errors correctly with impact." },
-      { key: "drawings", label: "Drawing Accuracy", desc: "Dimensions to face of finish, correct column grid, complete details, clean layers." },
-      { key: "visual", label: "Visual Quality", desc: "1920×1080 render, materials & lighting per decisions, clear camera intent." },
-      { key: "comms", label: "Written Comms (EN)", desc: "PM email ≤120 words, clear disruption reply, professional tone, complete assumptions." },
-      { key: "time", label: "Time Management", desc: "Submit ≤ 60 min, no panic at disruption, reasonable time allocation per stage." }
+      { key: "contract", label: "Agreement Reading", desc: "Finding the 3 problematic clauses and writing specific counter-notes." },
+      { key: "errors", label: "Material Check Accuracy", desc: "Detecting both spreadsheet data errors correctly, with impact." },
+      { key: "drawings", label: "Document Quality", desc: "Meeting notes with who+what+when, complete 5-phase timeline, concrete risk log." },
+      { key: "visual", label: "Readability", desc: "Documents are scannable: consistent structure, concise, no raw transcript dumping." },
+      { key: "comms", label: "Written Communication", desc: "Email ≤120 words, clear disruption reply, standard daily update format, professional tone." },
+      { key: "time", label: "Time Management", desc: "Submit ≤ 60 minutes, no panic during disruption, sensible per-stage allocation." }
     ]
   },
   hasil: {
     title: "Final Outcome",
-    content: "Score per 6 criteria, Senior Architect feedback per item, decision \"Offered next project\" or \"Not moving forward\", digital credential if passed."
+    content: "Score per 6 criteria, manager feedback per item, decision \"Offered next project\" or \"Not moving forward\", and a digital credential if you pass."
   },
   kredensial: {
     title: "Credential Requirements",
-    content: "Minimum 70% total score AND no criterion below 50%. If not met, no credential issued, but score report and feedback still provided.",
+    content: "Minimum 70% total score AND no criterion below 50%. If it falls short, there is no credential, but the score report and feedback are still provided.",
     levels: [
-      { name: "Completed", desc: "≥70 total, no criterion <50. Solid foundation." },
-      { name: "Proficient", desc: "≥85 total, contract & errors ≥80, visual ≥80. Ready for real projects." },
-      { name: "Distinction", desc: "≥95 total, no criterion <80. Junior studio level." }
+      { name: "Completed", desc: "≥70 total, no criterion <50. Solid foundation" },
+      { name: "Proficient", desc: "≥85 total, agreement & data detection ≥80, documents ≥80. Ready for real work" },
+      { name: "Distinction", desc: "≥95 total, no criterion <80. Hire-ready junior coordinator level" }
     ]
   },
   karakter: {
-    title: "Characters You'll Encounter",
+    title: "Characters You Will Meet",
     characters: [
-      { initials: "SC", role: "Project Manager", style: "Brief, sudden deadlines, sometimes incomplete info.", sample: "Septi — client request forwarded. You have 5 minutes to reply to me (not client) with: accept / reject / counter. One sentence each option. Then keep working. Clock doesn't stop. — S." },
-      { initials: "MW", role: "Senior Architect", style: "Detail-oriented, tough, no excuses.", sample: "Column grid fixed to 10800 — good catch on Error 1. But you didn't adjust bedroom/wet area dims to suit. Wardrobe internal elevation missing. Emergency light per NCC required in corridor. — M. Wright" },
-      { initials: "CL", role: "Client", style: "Rambling, can change direction.", sample: "Hi Septi, my wife and I think the bedroom needs a small desk nook. 600 deep by 1200 wide near the window. Also wet area feels tight — can we push the wall south 300? And budget: trim 15% off fit-out. Let us know. Thanks! — [Client Name]" }
+      { initials: "SC", role: "Project Manager", style: "Short, task-focused, relies on written updates.", sample: "You — the client asked for another addition. Check scope first, reply to me within 5 minutes: accept / reject / counter. One sentence per option. The clock keeps running. — S." },
+      { initials: "RP", role: "Head of Delivery", style: "Detail-oriented, judges by documents, no excuses.", sample: "An action item like 'send materials' without a name and date is not an action item. It is a prayer. Your meeting notes must be readable by someone who was not in the meeting. — R. Prameswari" },
+      { initials: "KA", role: "Client (Client A)", style: "Chatty, frequently changes requirements, sensitive about dates.", sample: "We want to launch on the 30th. Can we? Oh, and add an 'About Us' page while you're at it. And can the webinar promo budget be released this week? We want the ads running right away." }
     ]
   },
   persiapan: {
     title: "Preparation Before Start",
     items: [
-      "Laptop with software (SketchUp/D5/AutoCAD) open and ready",
+      "Laptop with Google Docs/Sheets and Notion open",
       "Stable internet connection",
-      "Quiet space, 60 uninterrupted minutes",
-      "Empty working folder created",
+      "Quiet room, 60 full minutes without interruption",
+      "An empty working folder created",
       "Other notifications (WhatsApp, email, etc.) turned off",
-      "Water/drinks ready at hand"
+      "Water/drink ready beside you"
     ]
   },
   start: {
-    label: "Start — open contract",
-    note: "60-minute timer begins the moment you press the button."
+    label: "Start — open the agreement",
+    note: "The 60-minute timer starts the moment you press this button."
   }
 };
 
 export const contract = {
-  title: "Freelance Services Agreement — Project-Based",
-  projectName: "Co-Living Unit Fit-Out — Diponegoro Site",
-  projectCode: "AW-2026-047",
-  role: "Remote Architectural Designer",
+  title: "Remote Work Agreement — Project Coordinator (Trial Week)",
+  projectName: "Client B Webinar: \"Digital Workflow 101\" — 100 attendees, 4 weeks",
+  projectCode: "TDA-2026-012",
+  role: "Junior Project Coordinator (Remote, WIB)",
   parties: {
-    studio: "Studio",
-    address: "Level 12, 367 Collins Street, Melbourne VIC 3000, Australia",
-    city: "Melbourne",
-    timezone: "AEDT (UTC+11)",
-    abn: "ABN 48 123 456 789",
-    email: "contracts@axelandwright.com.au",
-    seniorArchitect: "M. Wright",
-    pm: "Project Manager"
+    studio: "Agency",
+    address: "Cyber 2 Tower 8th Floor, HR Rasuna Said St., South Jakarta",
+    city: "Jakarta",
+    timezone: "WIB (UTC+7)",
+    abn: "Business ID 0123456789012",
+    email: "work@terradigital.id",
+    seniorArchitect: "R. Prameswari (Head of Delivery)",
+    pm: "S. Chen (Project Manager)"
   },
   freelancer: {
-    name: "Septi",
-    role: "Remote Architectural Designer",
-    rate: 45,
-    currency: "AUD",
-    rateNote: "Per hour, inclusive of superannuation equivalent. Tax obligations borne by freelancer."
+    name: "You (Coordinator)",
+    role: "Junior Project Coordinator (Remote)",
+    rate: "IDR 40,000",
+    currency: "",
+    rateNote: "Per hour during the trial week; full monthly fee per the agreement."
   },
   scope: [
-    "Produce working drawings for one co-living unit (bedroom + wet area) based on provided as-built and sketch.",
-    "Deliver: dimensioned plan (1:50), reflected ceiling plan (1:50), two interior elevations (1:50), one perspective render (1920×1080).",
-    "Incorporate PM mark-ups returned within 2 business days of each delivery.",
-    "Revisions until client approval — no cap on rounds.",
-    "File formats: .dwg (AutoCAD 2018), .pdf (press-ready), .jpg (render). Naming: AW-2026-047_[drawing-name]_[v#].",
-    "All source files handed over on final payment."
+    "Write meeting notes from the Client A weekly sync transcript, using the agency standard format (decisions, action items with owner + deadline, risks).",
+    "Build the Client B webinar project timeline: columns Phase, Task, Owner, Start, Deadline, Status, Notes.",
+    "Add a Risk Log with at least 3 risks — each with impact and a backup plan.",
+    "Write the daily update for your manager: Done / In progress / Blocker / Tomorrow.",
+    "Update task statuses on the board (Trello) based on incoming messages and data.",
+    "All documents use agency templates. File naming: TDA-2026-012_[doc-name]_v#."
   ],
   problematicClauses: [
-    { id: 1, text: "Revisions until client approval", issue: "No cap on revision rounds. Could mean unlimited unpaid rework." },
-    { id: 2, text: "Payment terms: Net 45 from invoice date", issue: "45-day payment cycle. Invoice submitted after final delivery means ~60+ days to first dollar." },
-    { id: 3, text: "Portfolio rights limited to static images only, subject to studio written consent per project", issue: "Cannot show drawings, process, or 3D views without case-by-case permission. Weakens future marketing." }
+    { id: 1, text: "Scope may change at any time according to client needs, with no change in fees", issue: "Unprotected scope creep. Every extra client request gets done for free — working hours balloon without compensation." },
+    { id: 2, text: "Work messages must be answered within 15 minutes, 07:00–22:00 WIB, seven days a week", issue: "On-call for nearly the whole day, including weekends. Remote work without clear boundaries leads to burnout and untracked overtime." },
+    { id: 3, text: "Fee is paid after end-of-month evaluation, maximum Net 45 after the invoice is approved by the manager", issue: "Payment can slip 45+ days and depends on 'approval'. If the evaluation is disputed, payment slips even longer." }
   ],
   fee: {
-    amount: 1800,
-    currency: "AUD",
-    breakdown: "Fixed fee for defined deliverables. Includes up to 3 revision rounds. Additional rounds at AUD 75/hr."
+    amount: "IDR 3,500,000",
+    currency: "",
+    breakdown: "Full-time remote monthly fee for the trial week, covering all tasks in scope. Out-of-scope work is agreed separately."
   },
-  paymentTerms: "Net 45 from invoice date. Invoice issued upon final file handover. 50% deposit waived for this engagement. All tax, superannuation, and compliance obligations borne by freelancer. Payment via Wise (AUD to IDR). Freelancer covers receive fees.",
+  paymentTerms: "Net 45 after the invoice is approved by the manager. Invoices are sent on the 1st via bank transfer. Taxes and social security are each party's responsibility according to employment status.",
   deadline: {
-    startTrigger: "Start button clicked on Introduction page",
+    startTrigger: "Start button pressed on the Introduction page",
     minutes: 60,
-    timezone: "AEDT (UTC+11)",
-    example: "If started at 09:00 AEDT, submit by 10:00 AEDT. Late submission = automatic withdrawal."
+    timezone: "WIB (UTC+7)",
+    example: "If you start at 09:00 WIB, submit before 10:00 WIB. Late submission = automatic termination."
   },
-  latePolicy: "Submission after deadline: contract void, no payment. Files not matching naming convention or format: rejected, clock keeps running. Corrupt/unopenable files: treated as non-submission.",
-  jurisdiction: "Victoria, Australia. Disputes resolved under Victorian law.",
+  latePolicy: "Submission after the deadline: agreement void, no pay. Documents not matching the format/template: rejected, clock keeps running. Corrupt or unopenable files: treated as a non-submission.",
+  jurisdiction: "Indonesian law. Disputes are settled by deliberation first, then through mediation per the agreement.",
   deliverablesFormat: [
-    ".dwg — AutoCAD 2018 compatible",
-    ".pdf — Press-ready, fonts embedded",
-    ".jpg — sRGB, 85% quality, 1920×1080",
-    "Naming: AW-2026-047_[drawing-name]_v#",
-    "All source files handed over on final payment"
+    "Meeting notes — doc/Notion, one page, agency standard format",
+    "Timeline + Risk Log — spreadsheet/Notion, columns Phase/Task/Owner/Start/Deadline/Status/Notes",
+    "Daily update — text, format Done / In progress / Blocker / Tomorrow",
+    "Naming: TDA-2026-012_[doc-name]_v#",
+    "All documents submitted through the platform"
   ],
   acceptedTitle: "Accepted — Clock Running",
-  acceptedMessage: "Contract Accepted",
+  acceptedMessage: "Agreement Accepted",
   acceptedNotes: "Accepted with notes. Notes saved.",
   acceptedNoNotes: "Accepted without notes.",
   startTimeLabel: "60-minute countdown started at",
   keyDeadlines: "Key Deadlines",
   submitDeadline: "Submit all deliverables by",
   disruptionExpected: "Disruption expected ~minute 25",
-  lateSubmission: "Late submission = contract void, no payment",
+  lateSubmission: "Late submission = agreement void, no pay",
   nextBrief: "Next: Project Brief",
-  readBrief: "Read the brief from PM. Note the undecided items and budget.",
+  readBrief: "Read the manager's brief. Note what is already decided and what you decide yourself.",
   openBrief: "Open Brief",
   yourNotes: "Your Notes",
   noNotes: "(no notes)"
@@ -200,168 +200,157 @@ export const contract = {
 
 export const brief = {
   title: "Project Brief",
-  from: "From Project Manager",
+  from: "From the Project Manager",
   meta: {
-    from: "Septi, Remote Architectural Designer",
-    to: "Project Manager",
-    subject: "AW-2026-047 — Brief: Co-Living Unit Fit-Out"
+    from: "S. Chen, Project Manager",
+    to: "You, Junior Project Coordinator",
+    subject: "TDA-2026-012 — Brief: First Week Work Package"
   },
-  body: `Project Manager,
+  body: `Coordinator,
 
-Contract attached. Read it. Clock starts when you hit Accept.
+The work agreement is attached. Read it first. The clock starts when you press Accept.
 
-Project: one co-living unit, Diponegoro site (Semarang). Footprint 12 × 8.8 m, two storeys. You get the ground-floor unit at the northeast corner. Entry from east corridor.
+You are remote from WIB; the team is in Jakarta. All coordination happens over Slack, Trello, Zoom, and email. Today you receive one work package covering two active projects:
 
-Program:
-- Bedroom: 3.6 × 3.2 m clear. Queen bed (1.6 × 2.0), bedside tables both sides, wardrobe 1.2 m wide full height.
-- Wet area: 2.4 × 1.8 m clear. Shower, wall-hung WC, vanity 600 mm. Floor waste centered.
-- No kitchenette. Communal pantry down the hall.
+Project 1 — Client A (digital agency retainer):
+- Client A's landing page is under revision. The designer (Rani) is waiting for the client's final logo — that is a blocker.
+- Yesterday there was a weekly sync with Client A. The transcript is attached on the Materials page.
+- Your job is to turn that transcript into clean meeting notes.
 
-Budget for fit-out (joinery, tiling, sanitary, lighting): AUD 8,500 equivalent. Do not exceed.
+Project 2 — Client B (webinar):
+- "Digital Workflow 101", 100 attendees, 4 weeks from now.
+- You will build a full timeline (5 phases) and a Risk Log with at least 3 risks.
+- All the numbers live in the project master spreadsheet — re-check it, something is off.
 
-References: Ganding Classic House bathroom palette (warm neutrals, terrazzo floor), Woman Gym 2025 joinery detailing (ply + HPL, shadow gap). Client chose: 600×600 mm matte porcelain floor, 300×600 mm wall tile to 2.1 m, ceiling white.
+Beyond that:
+- Your manager wants a daily update in the agency standard format.
+- The Trello board must reflect the latest status.
 
-Decided:
-- Floor finish, wall tile, ceiling height (2.7 m), door swing (bedroom into room, wet area out).
-- Wardrobe internal layout: hanging left, shelves right, drawers bottom.
-- Vanity: wall-hung, single bowl, mirror cabinet above.
+Already decided:
+- Platform: Zoom Webinar.
+- Total promo budget: IDR 8,500,000.
+- Content must be complete by the 20th; launch is on the 30th.
 
-Undecided / you resolve:
-- Shower screen: frameless pivot vs. fixed panel + walk-in. Pick one, justify in 1 line.
-- Lighting: recessed downlights only, or add LED strip under wardrobe / vanity. Max 4 circuits.
-- Power outlet locations: AS/NZS 3000 compliance. You place.
+You decide yourself:
+- Who owns each task and its deadline (based on how the team works in the transcript).
+- Which risks make it into the Risk Log and what the backup plans are.
+- What gets reported to your manager today — keep it short.
 
-As-built has two dimensional errors. Flag in submit.
+The master spreadsheet has two data errors. Find them, then report them at submit.
 
-Deliverables list follows. 60 minutes total. No extensions.
+The deliverables list follows. 60 minutes total. No extensions.
 
-— Project Manager
-Axel & Wright Architects
-Melbourne | AEDT`,
+— S. Chen, Project Manager
+Terra Digital Agency
+Jakarta | WIB`,
   keyNumbers: [
-    { label: "Site footprint", value: "12 × 8.8 m" },
-    { label: "Unit (per as-built)", value: "10.6 × 7.0 m" },
-    { label: "Bedroom", value: "3.6 × 3.2 m" },
-    { label: "Wet area", value: "2.4 × 1.8 m" },
-    { label: "Corridor", value: "1.2 m wide" },
-    { label: "Ceiling height", value: "2.7 m" },
-    { label: "Fit-out budget", value: "AUD 8,500" },
-    { label: "Tile spec", value: "600×600 floor, 300×600 wall to 2.1 m" }
+    { label: "Webinar duration", value: "4 weeks (launch on the 30th)" },
+    { label: "Attendee target", value: "100 present (platform capacity 500)" },
+    { label: "Speakers", value: "3 (2 internal, 1 external) + 1 backup" },
+    { label: "Platform", value: "Zoom Webinar" },
+    { label: "Promo budget", value: "IDR 8,500,000" },
+    { label: "Registration target", value: "350 → 100 present" },
+    { label: "Content deadline", value: "The 20th (meeting decision)" },
+    { label: "Promo starts", value: "Week 2 (21 full days)" }
   ],
   undecided: [
-    { icon: "🚿", title: "Shower screen", desc: "frameless pivot OR fixed panel + walk-in" },
-    { icon: "💡", title: "Lighting", desc: "downlights only OR + LED strip under wardrobe/vanity (max 4 circuits)" },
-    { icon: "🔌", title: "Power outlets", desc: "AS/NZS 3000 compliant placement" }
+    { icon: "👤", title: "Owner & deadline per task", desc: "You set them based on how the team works in the transcript and Slack" },
+    { icon: "⚠️", title: "Risk Log contents", desc: "At least 3 risks (e.g. speaker cancels, low sign-ups, platform failure) + backup plans" },
+    { icon: "📊", title: "Daily report contents", desc: "What you report to your manager today, in the Done/In progress/Blocker/Tomorrow format" }
   ],
-  undecidedNote: "Pick one each. Justify in 1 line in assumptions at submit.",
+  undecidedNote: "Decide each one yourself. Justify in one line under assumptions at submit.",
   nextMaterials: "Next: Input Materials"
 };
 
 export const materials = {
-  title: "Input Materials",
-  providedBy: "Provided by Studio",
+  title: "Input Materials (Today's Inbox)",
+  providedBy: "Received from the team & client",
   sketch: {
-    title: "Rough Sketch (Conceptual)",
-    description: "No image file provided. Work from dimensions above.",
-    image: "/img/refs/unit-sketch.svg",
-    imageAlt: "Conceptual sketch of bedroom, wet area, and corridor layout",
-    caption: "Conceptual sketch reference. Use as orientation only; verify all dimensions against as-built notes.",
-    notesTitle: "Text notes from sketch"
+    title: "Client A Weekly Sync Transcript (main source for meeting notes)",
+    description: "No audio file. Work from the transcript below.",
+    image: "",
+    imageAlt: "Client A weekly sync transcript",
+    caption: "Raw 30-minute transcript. Your job is to turn it into meeting notes: decisions, action items with owner + date, risks.",
+    notesTitle: "Open transcript + manager's notes"
   },
   sitePhotos: {
-    title: "Site Photos (Reference Images)",
+    title: "Messages & Updates from the Team (Slack / Email)",
     items: [
-      { image: "/img/refs/plan-reference.svg", alt: "East facade and window rhythm reference", text: "East facade: 3-storey brick, regular window rhythm. Unit window aligns with grid." },
-      { image: "/img/refs/unit-sketch.svg", alt: "Corridor and hose reel reference", text: "Corridor view: existing fire hose reel at 1.8 m from NE corner, projects 120 mm into corridor." },
-      { image: "/img/refs/elevation-reference.svg", alt: "Ceiling slab and downstand beam reference", text: "Ceiling slab: exposed concrete, services run below. Downstand beam 300 deep along grid line 3 (3.6 m from north wall)." }
+      { image: "", alt: "Rani's Slack message", text: "Slack #client-a (08:41): Rani — \"Client A's landing page revision is still waiting on the client's final logo. If the logo doesn't arrive today, the revision slips to next week.\"" },
+      { image: "", alt: "Manager's DM", text: "Slack DM from manager (08:55): \"The Client B webinar timeline needs to be done today too — I have to review it before tomorrow's weekly sync. Use the agency timeline template + a Risk Log tab.\"" },
+      { image: "", alt: "Email from Client A", text: "Email from Client A (09:05): \"We still haven't received the landing page revision, when will it come?\" — no reply from the team yet. You log this as today's priority." }
     ],
     photos: [
-      "East facade: 3-storey brick, regular window rhythm. Unit window aligns with grid.",
-      "Corridor view: existing fire hose reel at 1.8 m from NE corner, projects 120 mm into corridor.",
-      "Ceiling slab: exposed concrete, services run below. Downstand beam 300 deep along grid line 3 (3.6 m from north wall)."
+      "Slack #client-a (08:41): Rani — \"Client A's landing page revision is still waiting on the client's final logo. If the logo doesn't arrive today, the revision slips to next week.\"",
+      "Slack DM from manager (08:55): \"The Client B webinar timeline needs to be done today too — I have to review it before tomorrow's weekly sync. Use the agency timeline template + a Risk Log tab.\"",
+      "Email from Client A (09:05): \"We still haven't received the landing page revision, when will it come?\" — no reply from the team yet. You log this as today's priority."
     ]
   },
   asBuilt: {
-    title: "As-Built Survey — Diponegoro Co-Living Ground Floor NE Unit",
-    scale: "1:50",
-    paper: "A3",
-    notes: "Surveyed 12/03/2024. All dims internal face of wall. Verify on site.",
+    title: "Project Master Spreadsheet — Client B (Webinar \"Digital Workflow 101\")",
+    scale: "Revision 3",
+    paper: "Google Sheets",
+    notes: "Last updated Friday by Ops. Numbers are used across teams — verify before relying on them.",
     dimensions: {
-      unitWidth: "10600",
-      unitDepth: "7000",
-      bedroomWidth: "3600",
-      bedroomDepth: "3200",
-      wetAreaWidth: "2400",
-      wetAreaDepth: "1800",
-      corridorWidth: "1200",
-      northWallWindow: "1800 wide × 1200 high, sill 900",
-      bedroomDoor: "820 clear, from corridor",
-      wetAreaDoor: "720 clear, swing into bedroom",
-      columnGrid: "Columns at 0, 3600, 7200, 10800 from north wall. 300×300.",
-      downstandBeam: "Along grid line 3 (10800 from north), 300 deep, 400 wide."
+      budget: "IDR 8,500,000 (promo) — breakdown: ads 6,500,000 + boosting 2,700,000",
+      participants: "100 (platform capacity max 500)",
+      duration: "4 weeks — launch on the 30th",
+      platform: "Zoom Webinar",
+      speakers: "3 speakers (2 internal, 1 external, 1 backup)",
+      promo: "Starts week 2, 21 full days",
+      target: "350 registrations → 100 present",
+      leads: "1,200 email contacts (from the previous webinar)"
     },
-    errorsTitle: "⚠ Two Dimensional Errors Embedded",
-    errorsDesc: "Find them. Flag both in Submit with location, given dims, correct dims, impact.",
+    errorsTitle: "⚠ Two Data Errors Hiding in the Spreadsheet",
+    errorsDesc: "Find both. Report them at Submit with location, the written figure, the correct figure, and the impact.",
     errors: [
       {
         id: 1,
-        location: "Unit overall dimensions vs. column grid",
-        given: "Unit width 10600, columns at 0/3600/7200/10800",
-        issue: "Last column at 10800 exceeds unit width 10600 by 200 mm. Column sits outside unit boundary.",
-        correct: "Unit width should be 10800 to align with column grid, or last column at 10600."
+        location: "Content deadline vs. launch date",
+        given: "Progress sheet says \"content complete: week 3 (the 30th)\".",
+        issue: "The weekly sync transcript decided content must be complete by the 20th, with launch on the 30th. If content arrives on the 30th, there is no production time and the promo runs with nothing to show."
       },
       {
         id: 2,
-        location: "Fire hose reel vs. bedroom door swing",
-        given: "Corridor 1200 wide. Fire hose reel at 1800 from NE corner, projects 120 mm. Bedroom door 820 clear at corridor.",
-        issue: "Hose reel encroaches 120 mm into 1200 corridor. Bedroom door at 820 clear needs ~900 mm swing. Effective corridor 1080 mm. Door swing obstructed.",
-        correct: "Recess hose reel 150 mm into wall or relocate door. Fire engineer sign-off required."
+        location: "Budget summary vs. item breakdown",
+        given: "Summary cell: IDR 8,500,000. Breakdown: ads IDR 6,500,000 + boosting IDR 2,700,000.",
+        issue: "The breakdown adds up to IDR 9,200,000 — IDR 700,000 more than the summary. If used for approval, the budget is instantly off."
       }
     ],
-    answerKeyNote: "Answer key hidden until Results page."
+    answerKeyNote: "Answer key opens only on the Results page."
   },
   standards: {
-    title: "Building Standards & SOP Reference (US / UK / Global)",
-    intro: "Use these recognized standards as baseline guidance for drawings, dimensions, accessibility, safety, and fit-out coordination. Apply the project/jurisdiction requirements stated in the brief/contract.",
+    title: "Agency References & Templates (Working Standards)",
+    intro: "Use these templates and ground rules as the baseline for every document you write today. Documents that don't match the template are rejected.",
     groups: [
       {
-        region: "US (IBC / ICC / NFPA / ADA)",
+        region: "Standard Document Formats",
         items: [
-          { code: "IBC (International Building Code)", desc: "Minimum requirements for building safety, egress, occupancy, fire protection, and structural provisions (ICC)." },
-          { code: "ADA Standards for Accessible Design (2010)", desc: "Accessible routes, clearances, door maneuvering, reach ranges, and sanitary facility requirements." },
-          { code: "ICC A117.1", desc: "Accessible and usable buildings and facilities — technical criteria often referenced by IBC/ADA." },
-          { code: "IPC (International Plumbing Code)", desc: "Fixture layout, drainage, venting, and sanitary provisions for wet areas." },
-          { code: "NFPA 101 Life Safety Code", desc: "Means of egress, corridor widths, door swing/obstructions, and fire/life-safety planning." }
+          { code: "Meeting notes", desc: "Sections: Decisions, Action Items (Owner/Task/Deadline table), Risks/Notes. One page." },
+          { code: "Project timeline", desc: "Required columns: Phase | Task | Owner | Start | Deadline | Status | Notes. Phases: Planning, Preparation, Promotion, Execution, Evaluation." },
+          { code: "Risk log", desc: "Columns: Risk | Impact | Backup Plan | Owner. At least 3 risks per project." },
+          { code: "Daily report", desc: "Four lines: Done / In progress / Blocker (what help is needed) / Tomorrow. Max 80 words." }
         ]
       },
       {
-        region: "UK (Building Regulations / BS)",
+        region: "Communication Rules",
         items: [
-          { code: "Approved Document B", desc: "Fire safety — means of warning and escape, internal fire spread, and access for fire service." },
-          { code: "Approved Document F", desc: "Ventilation — adequate fresh air and extract for habitable rooms and wet areas." },
-          { code: "Approved Document G & H", desc: "Sanitation/hot water safety and foul/waste drainage for bathrooms and plumbing." },
-          { code: "Approved Document K & M", desc: "Protection from falling/collision/impact and access to/use of buildings (inclusive design)." },
-          { code: "BS 8300-2:2018", desc: "Design of an accessible and inclusive built environment — buildings (code of practice)." }
+          { code: "Action item", desc: "Must have a name and a date. 'Send materials' without an owner and deadline is not an action item." },
+          { code: "Written updates", desc: "Remote work runs on written communication — write updates that are clear and short." },
+          { code: "Proactive", desc: "You do the chasing, not the other way around. Consistent follow-up is a big plus." },
+          { code: "Change request", desc: "Out-of-scope requests are logged, never promised directly to the client; they go through cost estimation first." }
         ]
       },
       {
-        region: "Global / ISO (Drawings & Accessibility)",
+        region: "Tools in Use",
         items: [
-          { code: "ISO 128 (series)", desc: "Technical product documentation — general principles of presentation for drawings, views, lines, and layouts." },
-          { code: "ISO 129-1", desc: "Dimensioning and tolerancing principles — indication of dimensions on technical drawings." },
-          { code: "ISO 21542:2021", desc: "Building construction — accessibility and usability of the built environment." }
-        ]
-      },
-      {
-        region: "Project Context (Australia / NCC / AS-NZS)",
-        items: [
-          { code: "NCC (National Construction Code)", desc: "Performance requirements for health, amenity, safety (including egress and fire) in Australia." },
-          { code: "AS/NZS 3000 (Wiring Rules)", desc: "Electrical installation safety and placement — referenced in brief for power outlets." },
-          { code: "AS 1428.1", desc: "Design for access and mobility — general requirements for access in new buildings." }
+          { code: "Communication", desc: "Slack, WhatsApp, Zoom, Google Meet, email." },
+          { code: "Task management", desc: "Trello, Asana, Jira, ClickUp, Notion." },
+          { code: "Documents", desc: "Google Docs/Sheets, Excel (basic to intermediate)." }
         ]
       }
     ],
-    note: "Reference only for this simulation: follow the specific project brief, as-built conditions, and PM/client instructions. Verify local authority/jurisdiction compliance in real projects."
+    note: "For this simulation only. In real work, follow your own office's templates and SOPs."
   },
   nextDeliverables: "Next: Deliverables List"
 };
@@ -370,82 +359,83 @@ export const deliverables = {
   title: "Deliverables & Time Allocation",
   subtitle: "Max 4 Items",
   totalTimeNote: "Total suggested time: {total} minutes — You have 60 minutes total. Budget your time. Disruption at ~minute 25.",
-  referenceLabel: "Reference image (example guidance)",
+  referenceLabel: "Format reference (example guidance)",
   items: [
     {
       id: 1,
-      name: "Dimensioned Plan + RCP",
-      description: "Ground floor unit plan 1:50 with dimensions, annotations, door/window tags. Reflected ceiling plan 1:50 showing downlights, strip lighting, beam, diffuser locations.",
-      format: ".dwg (AutoCAD 2018) + .pdf",
-      scale: "1:50",
-      fileName: "AW-2026-047_plan-rcp_v1",
+      name: "Meeting Notes — Client A Weekly Sync",
+      description: "Turn the raw transcript into meeting notes in the agency format: decisions, action items, risks/notes. One page, scannable.",
+      format: "Filled directly in the Submit form (agency format)",
+      scale: "N/A",
+      fileName: "TDA-2026-012_notes-clientA_v1",
       suggestedTime: 25,
       checklist: [
-        "All internal dims to face of finish",
-        "Door/window schedule tags",
-        "RCP: 4 circuits max, beam shown dashed",
-        "Fire hose reel noted on plan",
-        "Column grid aligned (10800)",
-        "Layer naming: A-PLAN, A-RCP, A-DIMS, A-TEXT"
+        "Decisions written explicitly (launch target, content requirement)",
+        "Every action item has: who, what task, deadline when",
+        "The 'About Us' page flagged as a change request (out of scope)",
+        "Final logo recorded as a client item with a cutoff time",
+        "Risk noted: content late past the 20th → launch slips",
+        "Concise — not a raw transcript copy"
       ]
     },
     {
       id: 2,
-      name: "Two Interior Elevations",
-      description: "Bedroom north elevation (window, wardrobe). Wet area west elevation (vanity, shower, WC, tile layout). 1:50.",
-      format: ".dwg + .pdf",
-      scale: "1:50",
-      fileName: "AW-2026-047_elevations_v1",
+      name: "Webinar Project Timeline + Risk Log",
+      description: "Client B timeline in Sheets/Notion: Phase, Task, Owner, Start, Deadline, Status, Notes. Five phases: Planning, Preparation, Promotion, Execution, Evaluation. Plus a Risk Log tab with at least 3 risks.",
+      format: "Filled directly in the Submit form (timeline table + risk log)",
+      scale: "N/A",
+      fileName: "TDA-2026-012_timeline-clientB_v1",
       suggestedTime: 15,
       checklist: [
-        "Finished floor level (FFL) datum",
-        "Tile set-out: 600×600 floor, 300×600 wall to 2100",
-        "Wardrobe internal elevations (hanging/shelves/drawers)",
-        "Vanity + mirror cabinet",
-        "Shower screen type noted",
-        "Height dimensions: FFL to ceiling 2700"
+        "All 5 phases, ordered from planning to evaluation",
+        "Every task has an owner and start/deadline dates",
+        "Content deadline = the 20th (per the meeting decision, not the wrong sheet)",
+        "Risk log ≥ 3 risks (e.g. speaker cancels, low sign-ups, platform failure)",
+        "Each risk: impact + backup plan",
+        "Budget error in the spreadsheet corrected or flagged"
       ]
     },
     {
       id: 3,
-      name: "Perspective Render",
-      description: "One interior view: bedroom looking toward wet area door. Show material palette, lighting, joinery. 1920×1080, 300 dpi.",
-      format: ".jpg (sRGB, 85% quality)",
+      name: "Daily Update for the Manager",
+      description: "A short report in the standard format: Done / In progress / Blocker (what help is needed) / Tomorrow. Scannable in 30 seconds.",
+      format: "Filled directly in the Submit form (4 sections)",
       scale: "N/A",
-      fileName: "AW-2026-047_render_v1",
+      fileName: "N/A",
       suggestedTime: 10,
       checklist: [
-        "Camera: eye level 1600, 24mm equiv.",
-        "Materials: porcelain, terrazzo, ply/HPL, matte white",
-        "Lighting: 4× downlight + LED strip under wardrobe",
-        "No people, no entourage",
-        "Watermark: none (studio adds)"
+        "Four sections: Done, In progress, Blocker, Tomorrow",
+        "Blocker names the Client A logo blocker and who is needed",
+        "Concrete numbers (tasks done, dates, names)",
+        "No rambling — around 80 words max",
+        "Client A's change request mentioned with its status (awaiting decision)",
+        "Honest: unfinished work is still reported"
       ]
     },
     {
       id: 4,
-      name: "Cover Email + QA Checklist",
-      description: "Email to PM (max 120 words). Assumptions list. As-built errors found. QA checkboxes.",
-      format: "Text entry in submit form",
+      name: "Summary Email + QA Checklist",
+      description: "Email to the manager (max 120 words): what was delivered, key decisions, data errors found, what awaits a decision. Plus honest QA checkboxes.",
+      format: "Filled directly in the Submit form (4 sections)",
       scale: "N/A",
       fileName: "N/A",
       suggestedTime: 10,
       checklist: [
         "Email ≤ 120 words, professional tone",
-        "Assumptions: bullet list, max 6 items",
-        "As-built errors: both identified with location + impact",
-        "QA: all 12 checkboxes honest",
-        "File naming convention followed",
-        "No corrupt files"
+        "Names the 3 main deliverables and their status",
+        "Both data errors reported with location + impact",
+        "'About Us' change request — status: awaiting cost estimate",
+        "QA: all 12 checkboxes answered honestly",
+        "File naming follows the convention"
       ]
     }
   ],
   timeBreakdown: {
     title: "Suggested Time Breakdown",
     breakdown: [
-      { label: "Read Contract + Brief", time: 10, color: "text-primary" },
-      { label: "Draw / Model", time: 25, color: "accent-gold" },
-      { label: "Render / Visual", time: 15, color: "text-secondary" },
+      { label: "Read Agreement + Brief", time: 10, color: "text-primary" },
+      { label: "Write Documents", time: 35, color: "accent-gold" },
+      { label: "Review & Clean Up", time: 5, color: "text-secondary" },
       { label: "Email + QA", time: 10, color: "accent-gold-light" }
     ]
   },
@@ -456,18 +446,20 @@ export const disruption = {
   title: "Mid-Session Disruption",
   elapsedLabel: "Elapsed",
   incomingTitle: "Incoming: Client Request (via PM)",
-  incomingDesc: "Forwarded at minute ~25. Clock does NOT stop.",
-  clientMessage: `Hi Sandy,
+  incomingDesc: "Forwarded at ~minute 25. The clock does NOT stop.",
+  clientMessage: `Hi,
 
-Just looked at the floor plan sketch Septi sent over (I assume that's what the attachment was). Couple of things — my wife and I were talking last night and we really think the bedroom needs a small desk nook. Even just 600 deep by 1200 wide tucked near the window. People work from home now, right? And while we're at it, the wet area feels a bit tight. Can we push the wall south 300? The corridor can take it, it's 1200 wide anyway. Also, budget — we need to trim 15% off the fit-out number. The numbers are getting away from us. Let me know if any of this is a problem. We trust your judgment but these are important to us.
+We've been thinking about the website again. Could you add an "About Us" page in the current sprint? The designer is already holding the landing page revision anyway. And please confirm — launch is still the 30th, right? We already promised that date to our boss.
+
+Oh, and can the webinar promo budget be released this week? We want the ads running right away.
 
 Thanks,
-[Client Name]
+[Client A]
 Sent from my iPhone`,
   pmNoteTitle: "PM Note",
-  pmNote: `Septi — client request forwarded. You have 5 minutes to reply to me (not client) with: accept / reject / counter. One sentence each option. Then keep working. Clock doesn't stop.
+  pmNote: `You — the client is pinging again. You have 5 minutes to reply to me (not the client): accept / reject / counter. One sentence per option. Remember: "About Us" is a change request outside scope, and the 30th depends on content arriving by the 20th. The clock keeps running.
 
-— Project Manager.`,
+— S. Chen, PM.`,
   replyTitle: "Your Reply to PM (5 minutes)",
   replyDesc: "Choose one. Write one sentence in English. Then continue working.",
   options: {
@@ -475,7 +467,7 @@ Sent from my iPhone`,
     reject: "Reject Changes",
     counter: "Counter / Conditional"
   },
-  replySentTitle: "Your Reply Sent",
+  replySentTitle: "Reply Sent",
   replySaved: "Saved. Continue working. Clock still running.",
   nextSubmit: "Next: Submit"
 };
@@ -483,29 +475,83 @@ Sent from my iPhone`,
 export const submit = {
   title: "Submit",
   finalStep: "Final Step",
+  timeNote: "Time remaining: {time} — fill in the documents below like real work, not a summary.",
+  notes: {
+    title: "Meeting Notes — Client A Weekly Sync",
+    subtitle: "Deliverable 1 (25 minutes). Use the agency format: decisions, action items with owner + deadline, risks.",
+    datePlaceholder: "Date & attendees — e.g. 19/11 | Attendees: PM (Sari), Designer (Rani), Client A",
+    decisionsPlaceholder: "Decisions — e.g. launch on the 30th; content due by the 20th at the latest...",
+    actionItemsTitle: "Action items (each row requires: owner + task + date)",
+    colOwner: "Who",
+    colTask: "Task",
+    colDeadline: "Deadline",
+    taskPlaceholder: "Send content / send final logo / send cost estimate...",
+    deadlinePlaceholder: "the 20th / tomorrow (write the date) / ...",
+    addRow: "Add row",
+    risksPlaceholder: "Risks/notes — e.g. content late past the 20th → launch slips; 'About Us' = change request awaiting cost estimate"
+  },
+  timeline: {
+    title: "Client B Webinar Project Timeline + Risk Log",
+    subtitle: "Deliverable 2 (15 minutes). At least 5 timeline rows (5 phases: Planning, Preparation, Promotion, Execution, Evaluation) and 3 risks with backup plans.",
+    colPhase: "Phase",
+    colTask: "Task",
+    colOwner: "Owner",
+    colStart: "Start",
+    colDeadline: "Deadline",
+    colStatus: "Status",
+    colRisk: "Risk",
+    colImpact: "Impact",
+    colBackup: "Backup plan",
+    phasePlaceholder: "Planning / Preparation / Promotion / ...",
+    taskPlaceholder: "Fix date & venue (virtual) / open registration / ...",
+    ownerPlaceholder: "Sari / Rani / Ops / ...",
+    datePlaceholder: "t-28 / Nov 21 / ...",
+    riskPlaceholder: "Speaker cancels at D-3 / sign-ups < 100 / platform fails during the live session",
+    impactPlaceholder: "Content slips / empty webinar / attendees can't join",
+    backupPlaceholder: "Backup: Mr. Budi (similar topic) / extra ads / backup stream to YouTube",
+    statusNotStarted: "Not started",
+    statusInProgress: "In progress",
+    statusBlocked: "Blocked",
+    statusDone: "Done",
+    addRow: "Add row",
+    riskLogTitle: "Risk Log (at least 3 risks, each with impact + backup plan)"
+  },
+  dailyReport: {
+    title: "Daily Update for the Manager",
+    subtitle: "Deliverable 3 (10 minutes). Agency standard format, around 80 words max, scannable in 30 seconds.",
+    done: "Done",
+    inProgress: "In progress",
+    blocker: "Blocker (what help is needed)",
+    tomorrow: "Tomorrow",
+    donePlaceholder: "e.g. 2 tasks done: Client A meeting notes, Client B timeline draft v1",
+    inProgressPlaceholder: "e.g. reviewing the timeline before sending it to the manager",
+    blockerPlaceholder: "e.g. Client A's final logo hasn't arrived — need the PM to chase the client before 12:00",
+    tomorrowPlaceholder: "e.g. send the landing page revision to the client, start the development phase"
+  },
   filesUpload: {
-    title: "Files Upload",
-    acceptedTypes: "Required: .dwg (AutoCAD 2018), .pdf, .jpg per deliverable list. Naming: AW-2026-047_[name]_v#",
+    title: "Attachments (optional)",
+    subtitle: "If you worked on documents elsewhere (Sheets/Notion/Word), attach them here. The form above is still required.",
+    acceptedTypes: "Formats: .pdf, .doc/.docx, .xlsx/.csv, .txt, .md. Naming: TDA-2026-012_[doc-name]_v#",
     dragDrop: "Drag & drop files here or click to browse",
-    uploadedFiles: "Uploaded Files",
+    uploadedFiles: "Uploaded Documents",
     remove: "Remove"
   },
   coverEmail: {
-    title: "Cover Email to PM",
-    placeholder: "Max 120 words. Professional tone. Reference assumptions and as-built errors.",
+    title: "Summary Email to Manager",
+    placeholder: "Max 120 words. Cover what was delivered, key decisions, and what awaits a decision.",
     wordCount: "Words: {count} / 120",
     overLimit: "OVER LIMIT",
     ok: "OK"
   },
   assumptions: {
-    title: "Assumptions Taken",
-    placeholder: "Max 6 bullets. Cover: shower screen, lighting, outlets, beam, hose reel, tile grout, hardware finish...",
+    title: "Working Notes & Assumptions",
+    placeholder: "Max 6 bullets. E.g.: owners & deadlines set by you based on the transcript; which risks made the log; document formats used...",
     note: "Bullet list. One per line."
   },
   asBuiltErrors: {
-    title: "As-Built Errors Found",
-    placeholder: "Error 1: location, given dims, correct dims, impact. Error 2: location, given dims, correct dims, impact.",
-    note: "Both errors required. Be specific."
+    title: "Spreadsheet Data Findings",
+    placeholder: "Error 1: location (cell/row), written figure, correct figure, impact. Error 2: same.",
+    note: "Both errors must be reported — don't quietly fix them. Be specific."
   },
   qaChecklist: {
     title: "QA Checklist (All Required)",
@@ -513,13 +559,25 @@ export const submit = {
     submitButton: "Submit Now",
     earlySubmit: "Early submit + quality pass = bonus. Late = void."
   },
+  validation: {
+    dateRequired: "Meeting notes: fill in the date & attendees first.",
+    decisionsRequired: "Meeting notes: the Decisions section is empty.",
+    actionItemsRequired: "Meeting notes: at least 2 complete action items (who + task + deadline).",
+    timelineRequired: "Timeline: at least 5 rows with Phase, Task, Owner, and Deadline filled in.",
+    risksRequired: "Risk log: at least 3 risks with impact + backup plan.",
+    dailyReportRequired: "Daily update: all four sections (Done/In progress/Blocker/Tomorrow) are required.",
+    emailRequired: "The summary email to the manager is empty.",
+    emailOverLimit: "Email exceeds 120 words.",
+    findingsRequired: "Spreadsheet data findings are empty — report the 2 errors you found.",
+    qaRequired: "All QA checkboxes must be checked honestly."
+  },
   submitted: {
     title: "Submitted",
     timeUsed: "Time used: {time}",
     preparingResults: "Results are being prepared. Redirecting...",
-    sending: "Uploading files and sending email to reviewer...",
-    sent: "Submission emailed successfully.",
-    sendError: "Submission saved locally, but email could not be sent automatically."
+    sending: "Sending the work package to reviewers...",
+    sent: "Submission email sent successfully.",
+    sendError: "Submission saved locally, but the automatic email failed."
   }
 };
 
@@ -527,9 +585,9 @@ export const results = {
   title: "Results",
   postSession: "Post-Session Review",
   tabs: {
-    senior: "Senior Architect Feedback",
+    senior: "Manager Feedback",
     pm: "PM Comment",
-    contract: "Contract Evaluation",
+    contract: "Agreement Evaluation",
     rubric: "Score Rubric",
     email: "Email Examples",
     decision: "Final Decision",
@@ -537,82 +595,80 @@ export const results = {
   },
   seniorFeedback: [
     {
-      item: "Dimensioned Plan + RCP",
-      verdict: "Partially correct",
-      markup: [
-        "Column grid fixed to 10800 — good catch on Error 1. But you didn't adjust bedroom/wet area dims to suit. Bedroom still 3600 wide, now 200 short of grid. Should be 3600/3600/3600 or note non-alignment.",
-        "Fire hose reel noted on plan — correct. But no recess detail. Door swing still clashes. Need 200 mm recess or door relocation.",
-        "RCP: 4 circuits OK. Beam shown dashed — good. Missing: emergency light location per NCC. Required in corridor.",
-        "Layer naming clean. Title block missing project code."
-      ]
-    },
-    {
-      item: "Interior Elevations",
+      item: "Meeting Notes — Client A",
       verdict: "Correct with omissions",
       markup: [
-        "Bedroom north: wardrobe internal elevation missing. Only front face shown. Client asked for hanging/shelves/drawers — show internals.",
-        "Wet area west: tile set-out correct. Shower screen noted as 'frameless pivot' — OK. But no floor waste location on elevation. Critical for fall.",
-        "Vanity: mirror cabinet height not dimensioned. Standard 1800 above FFL? State it."
+        "Key decisions written: launch on the 30th, content by the 20th — correct.",
+        "Action item 'send content' has an owner (Client) and deadline (20th) — correct. But 'send final logo' has no concrete date, just 'tomorrow'. Write the date.",
+        "The 'About Us' page is only mentioned at the bottom, not clearly flagged as a change request awaiting a cost estimate. That is the item most likely to blow up scope."
       ]
     },
     {
-      item: "Perspective Render",
+      item: "Timeline + Risk Log",
+      verdict: "Partially correct",
+      markup: [
+        "All 5 phases, owners filled in. Good.",
+        "One row still follows the wrong sheet's content deadline (week 3) — you found the error but didn't fix the timeline. Inconsistent.",
+        "Risk log: 3 risks is enough, but 'speaker cancels' has no concrete backup plan (named replacement / shifted topic). 'Plan: find a replacement' is not a plan."
+      ]
+    },
+    {
+      item: "Daily Update",
       verdict: "Acceptable",
       markup: [
-        "Materials match palette. Lighting shows 4 downlights + strip — matches your decision. Good.",
-        "Camera angle shows wet area door swing — clever. But render shows pivot screen closed. Open position would clarify clearance.",
-        "Resolution and format correct. No watermark — correct."
+        "The 4-section format is followed. The blocker (Client A logo) names who is needed — that's what lets a manager act.",
+        "Concrete numbers present: 2 tasks done, 1 change request awaiting decision.",
+        "The 'Tomorrow' section is actionable: send the revision, start the development phase."
       ]
     },
     {
-      item: "Cover Email",
+      item: "Summary Email",
       verdict: "Concise but missing key flag",
       markup: [
-        "Word count 98 — under limit. Tone professional. References assumptions and errors — good.",
-        "Did not flag: Net 45 payment term will delay your cash flow. Client budget cut 15% not addressed. You accepted disruption counter but email doesn't confirm scope change.",
-        "Assumptions list: 5 items. Missing: tile grout width (3 mm assumed), shower screen hardware finish (matte black assumed)."
+        "Word count 96 — under the limit. Professional tone. Clear structure.",
+        "Did not mention: the contract's 15-minute / 07:00–22:00 response clause — the heaviest burden of the trial week and worth renegotiating before week two.",
+        "The budget error is called 'a discrepancy' with no number. State it: IDR 700,000."
       ]
     },
     {
-      item: "As-Built Errors",
+      item: "Spreadsheet Data Errors",
       verdict: "Both found",
       markup: [
-        "Error 1 (column grid): correctly identified 200 mm mismatch. Proposed fix: extend unit to 10800. Acceptable.",
-        "Error 2 (hose reel): correctly identified obstruction. Proposed fix: recess hose reel 150 mm into wall. Acceptable — but needs fire engineer sign-off. You didn't mention."
+        "Error 1 (content deadline): correctly spotted the contradiction with the transcript, impact explained.",
+        "Error 2 (budget): correctly computed the IDR 700,000 gap. The proposed fix is sensible, but you didn't say who should decide (ops or the manager) — name the owner."
       ]
     }
   ],
-  pmComment: `Email: clear, under word limit. Good you flagged assumptions. Disruption reply: you countered (desk nook = scope creep, budget cut = reject, wall move = conditional on fire hose). Correct call. But you didn't confirm revised deliverable list in email. Next time, one line: 'Deliverables unchanged per original brief.'`,
+  pmComment: `Email: clear, under the word limit, and good that you reported your assumptions. Disruption reply: you countered — "About Us" goes through a cost estimate first, launch stays on the 30th as long as content lands by the 20th. Right call. But you didn't re-confirm the deliverables list in the email. Next time, one line: "Scope of deliverables unchanged from the brief."`,
   contractEvaluation: {
-    title: "Contract Clause Evaluation",
-    desc: "Did Septi catch the 3 problematic clauses? What notes should have been written?",
+    title: "Agreement Clause Evaluation",
+    desc: "Did you catch the 3 problematic clauses? What notes should have been written?",
     clauses: [
-      { clause: "Revisions until client approval", caught: true, note: "Noted as 'unlimited revision risk' in assumptions. Should have proposed cap: 3 rounds included, then AUD 75/hr.", recommended: "Clause 1: 'Revision rounds capped at 3 included. Additional at AUD 75/hr.'" },
-      { clause: "Net 45 payment", caught: true, note: "Flagged in assumptions. Should have asked for 50% deposit or Net 14.", recommended: "Clause 2: 'Request Net 14 or 50% deposit on acceptance.'" },
-      { clause: "Portfolio rights restricted", caught: false, note: "Missed entirely. No note written. This clause means you cannot show this work to future clients without studio permission — weakens your pipeline.", recommended: "Clause 3: 'Portfolio rights: static images + drawings + process OK for self-promotion with project anonymization.'" }
+      { clause: "Scope changes with no fee change", caught: true, note: "Flagged as 'scope creep' in the accept notes. Should have immediately proposed: extra requests go through a change request with a cost estimate.", recommended: "Clause 1: 'Out-of-scope requests are handled via a change request with a cost estimate before work starts.'" },
+      { clause: "15-minute response, 07:00–22:00, 7 days", caught: true, note: "Written in the assumptions. Should have proposed realistic response hours on workdays (e.g. 09:00–18:00 WIB, max 1 hour) with on-call scheduled separately.", recommended: "Clause 2: 'Response hours: 09:00–18:00 WIB on workdays, max 1 hour. Outside those hours, best-effort.'" },
+      { clause: "Net 45 fee after 'manager approval'", caught: false, note: "Missed entirely. No note written. This clause makes your pay depend on the same person who judges your work — a big risk during the trial week.", recommended: "Clause 3: 'Fee paid Net 14 after invoicing; the invoice is deemed approved if no objection within 3 business days.'" }
     ]
   },
   rubric: [
-    { criteria: "Contract Reading", weight: 20, indicators: ["Identified all 3 problematic clauses", "Wrote specific counter-notes for each", "Understood deadline trigger (Accept = clock start)", "Noted jurisdiction / tax obligation"], pass: "2+ clauses caught with actionable notes" },
-    { criteria: "As-Built Error Detection", weight: 20, indicators: ["Found Error 1 (column grid 200 mm mismatch)", "Found Error 2 (fire hose reel blocks door swing)", "Stated correct dimensions", "Described impact on design"], pass: "Both errors found with correct dims + impact" },
-    { criteria: "Drawing Accuracy", weight: 25, indicators: ["Plan dims to face of finish", "Column grid aligned (10800)", "Fire hose recess or door relocation shown", "RCP: 4 circuits, beam dashed, emergency light", "Elevations: FFL datum, tile set-out, internals", "Title block with project code"], pass: "5/6 indicators met" },
-    { criteria: "Visual Quality", weight: 15, indicators: ["Render 1920×1080, correct materials", "Lighting matches decision (4 downlights + strip)", "Camera shows design intent", "No entourage, no watermark"], pass: "All 4 met" },
-    { criteria: "Communication", weight: 10, indicators: ["Email ≤ 120 words, professional", "Disruption reply: clear accept/reject/counter to PM", "Assumptions list ≤ 6, covers key unknowns", "Tone: business English (EOD, ASAP, FYI)"], pass: "3/4 met" },
-    { criteria: "Time Management", weight: 10, indicators: ["Submitted within 60 minutes", "Early submit + quality = bonus", "Time tracked per deliverable", "No panic at disruption (min 25)"], pass: "Submit ≤ 60 min, quality pass" }
+    { criteria: "Contract Reading", weight: 15, indicators: ["Found all 3 problematic clauses", "Wrote specific counter-notes for each", "Understood the deadline trigger (Accept = clock start)", "Noted tax obligations / employment status"], pass: "2+ clauses caught with actionable notes" },
+    { criteria: "Data Accuracy", weight: 20, indicators: ["Found Error 1 (content deadline vs. launch)", "Found Error 2 (budget gap of IDR 700,000)", "Stated the impact of each error", "Timeline uses the correct data (content by the 20th)"], pass: "Both errors found with location + impact" },
+    { criteria: "Meeting Notes Quality", weight: 15, indicators: ["Decisions explicit and correct", "All action items: who + what + when", "Change request clearly flagged", "Concise, not a transcript copy"], pass: "4/4 indicators met" },
+    { criteria: "Timeline & Risk", weight: 20, indicators: ["All 5 phases complete and ordered", "Every task has an owner and dates", "Risk log ≥ 3 with impact + concrete backup plans", "Columns match the template (Phase/Task/Owner/Start/Deadline/Status/Notes)"], pass: "5/6 indicators met" },
+    { criteria: "Communication", weight: 15, indicators: ["Email ≤ 120 words, professional", "Disruption reply: clear accept/reject/counter to the PM", "Daily update in the 4-section format, scannable", "Written tone clear and short"], pass: "3/4 met" },
+    { criteria: "Time Management", weight: 15, indicators: ["Submitted within 60 minutes", "Early submit + quality = bonus", "Time tracked per deliverable", "No panic at the disruption (minute 25)"], pass: "Submit ≤ 60 min, quality pass" }
   ],
   emailExamples: {
     pass: {
       title: "Pass Level Email",
-      content: `Subject: AW-2026-047 — Deliverables v1
+      content: `Subject: TDA-2026-012 — Today's deliverables
 
-Sandy,
+Sari,
 
-Attached: plan+RCP, 2 elevations, render per brief. 
-Assumptions: (1) shower frameless pivot, (2) 4 downlights + LED strip under wardrobe, (3) outlets per AS/NZS 3000, (4) tile grout 3 mm, (5) shower hardware matte black, (6) hose reel recessed 150 mm.
-As-built errors flagged: (1) column grid 200 mm short — extended to 10800, (2) hose reel obstructs bedroom door — recess proposed.
-All files named AW-2026-047_[name]_v1. Ready for mark-up.
+Delivered: (1) Client A meeting notes — launch on the 30th, content by the 20th, "About Us" flagged as a change request; (2) Client B webinar timeline, 5 phases + a 3-risk log; (3) the daily update.
+Found in the master spreadsheet: content deadline written as the 30th (should be the 20th), and the promo budget breakdown totals IDR 9,200,000 vs. the summary IDR 8,500,000 (IDR 700,000 gap). Please advise on the correction.
+Waiting on: the final logo from Client A (blocker for the landing page revision).
 
-— Septi`,
+— You (Coordinator)`,
       reason: "Complete, professional, all requirements met"
     },
     fail: {
@@ -621,11 +677,10 @@ All files named AW-2026-047_[name]_v1. Ready for mark-up.
 
 Hi,
 
-Files attached. I did the drawings and render. The as-built had some issues but I fixed them. Let me know if you need changes.
+All files attached. Notes are done, timeline too. Some numbers in the spreadsheet looked weird but I cleaned them up myself.
 
-Thanks,
-Nuha`,
-      reason: "No project code, no assumptions, no error log, no file naming, casual tone, under-delivered."
+Thanks`,
+      reason: "No project code, no decision details, data errors not reported — in fact quietly 'fixed' (dangerous), no owner/deadline, careless tone."
     }
   },
   decision: {
@@ -636,27 +691,28 @@ Nuha`,
       "Total ≥ 70 AND all pass thresholds met → Offered",
       "Total < 70 OR any critical fail (0 clauses caught, 0 errors found, late) → Not Moving Forward"
     ],
-    offeredMessage: "Senior Architect: \"Clean enough to iterate. Fix the wardrobe internals and emergency light. Next brief comes Monday.\"",
-    notOfferedMessage: "Senior Architect: \"Missed the portfolio clause. That's a career limiter. Contract reading is not optional.\""
+    offeredMessage: "Manager: \"Clean enough to iterate. Fix the action items without dates and the risk log without backup plans. Next brief comes Monday.\"",
+    notOfferedMessage: "Manager: \"Missed the Net 45 clause. That's what makes your pay slip. Reading the agreement is not optional.\""
   },
   credential: {
-    title: "Remote Architectural Designer — Simulated Project Practice",
-    description: "Proof of simulated practice assessed by rubric, not an official professional certification and not real studio work experience.",
-    projectCode: "AW-2026-047",
+    title: "Junior Project Coordinator — Simulated Project Practice",
+    description: "Proof of a simulation exercise graded against a rubric — not an official professional certification and not real work experience at an actual company.",
+    projectCode: "TDA-2026-012",
     earned: "Credential Earned",
     notEarned: "Credential Not Earned",
     notEarnedDesc: "Minimum 70% total score with no criterion below 50% required. Your score: {score}%",
     notEarnedNote: "You still receive full feedback and rubric scores. Retake the simulation to earn a credential.",
     levels: [
       { key: "completed", name: "Completed", desc: "All criteria ≥ 50, total ≥ 70. Solid foundation." },
-      { key: "proficient", name: "Proficient", desc: "Contract & error detection ≥ 80, visual ≥ 80. Ready for real projects." },
-      { key: "distinction", name: "Distinction", desc: "Total ≥ 95, no criterion < 80. Junior studio level." }
+      { key: "proficient", name: "Proficient", desc: "Agreement & data detection ≥ 80, documents ≥ 80. Ready for real work." },
+      { key: "distinction", name: "Distinction", desc: "Total ≥ 95, no criterion < 80. Hire-ready junior coordinator level." }
     ],
     skillsProven: [
       "contract review",
-      "as-built verification",
-      "1:50 working drawings",
-      "interior perspective rendering",
+      "meeting notes",
+      "project timeline",
+      "risk log",
+      "daily reporting",
       "professional email in English",
       "time management"
     ],
@@ -664,19 +720,19 @@ Nuha`,
       recipientName: "Alexandra Chen",
       level: "Proficient",
       issuedDate: "2026-11-17",
-      verificationId: "RWT-2026-047-PRF-8K9L",
-      scores: { contract: 85, errors: 90, drawings: 88, visual: 85, comms: 92, time: 100 }
+      verificationId: "RWT-2026-012-PRF-8K9L",
+      scores: { contract: 85, data: 90, notes: 88, timeline: 85, comms: 92, time: 100 }
     },
     privacyOptions: [
-      { key: "minimal", label: "Level & Skills only", desc: "Only level and skill list visible publicly" },
-      { key: "full", label: "Level, Skills & Scores", desc: "Level, skills, and per-criterion scores visible publicly" }
+      { key: "minimal", label: "Level & Skills only", desc: "Only the level and skill list appear publicly" },
+      { key: "full", label: "Level, Skills & Scores", desc: "Level, skills, and per-criteria scores appear publicly" }
     ],
     linkedInFields: {
-      name: "Remote Architectural Designer — Simulated Project Practice",
+      name: "Junior Project Coordinator — Simulated Project Practice",
       issuer: "Remote Work Training Platform",
       issueDate: "2026-11",
-      credentialId: "RWT-2026-047-PRF-8K9L",
-      credentialUrl: "https://r2studio.web.id/verify/RWT-2026-047-PRF-8K9L"
+      credentialId: "RWT-2026-012-PRF-8K9L",
+      credentialUrl: "https://r2studio.web.id/verify/RWT-2026-012-PRF-8K9L"
     },
     actions: {
       downloadPdf: "Download PDF",
@@ -698,105 +754,122 @@ export const verdicts = {
   partial: "Correct with omissions",
   fail: "Partially correct"
 };
+
 export const sop = {
-  menu: "SOP Remote Work",
+  menu: "Remote Work Guide",
   badge: "Guide",
-  title: "Remote Architecture Work SOP (UK / US / Global)",
-  eyebrow: "Client & Freelancer Guide",
-  intro: "Standard guide for remote work: work chain, project stages, BIM, drawing standards, codes/regulations, technical skills, daily SOP, and roadmap so clients and freelancers stay aligned.",
+  title: "Remote Work Guide: Ops, Project Coordinator & Trainee",
+  eyebrow: "Guide for Applicants & Beginners",
+  intro: "A complete picture of the three most in-demand entry-level remote roles — Remote Operations, Remote Project Manager/Project Coordinator, and Remote Trainee — plus a day-in-the-life simulation, skills & tools, portfolio exercises, and where to find openings.",
   s1: {
-    heading: "1. Your position in the work chain",
-    p: "Most overseas clients will treat you as a production subcontractor:",
+    heading: "1. The three entry-level remote roles",
+    p: "Almost every entry-level remote job posting falls into one of these three roles:",
     items: [
-      "<strong>Legal responsibility and stamps/licenses</strong> remain with the client\u2019s architect or engineer.",
-      "<strong>Your role:</strong> produce accurate, consistent models and drawings that follow the client\u2019s office standards and are delivered on time.",
-      "<strong>Your value:</strong> speed, accuracy, understanding of standards, and clear communication."
+      "<strong>Remote Operations (Ops Coordinator / Ops Assistant):</strong> keeps the business's daily processes running — processing incoming orders/tickets (client orders, customer onboarding, refunds), updating data in internal systems (CRM, spreadsheets, internal tools), following up with vendors/clients/other teams, building and updating SOPs, quality-checking that process steps are followed, writing simple routine reports (orders in / completed / pending), and handling operational problems (\"late shipment\", \"wrong invoice\").",
+      "<strong>Remote Project Manager / Project Coordinator (Junior):</strong> makes sure projects finish on scope, on time, and on budget — breaking projects into small tasks with deadlines & owners, managing the board (Trello/Asana/Jira/ClickUp), running and recording meetings (kickoff, weekly sync, retrospective), writing meeting notes + action items and sending them after the meeting, chasing progress (\"where is task X?\"), identifying risks & blockers and escalating to superiors, acting as the bridge between clients/stakeholders and the technical/creative team, and writing weekly status reports.",
+      "<strong>Remote Trainee (Management Trainee / Operations Trainee):</strong> learn while working, usually rotating across divisions — helping with ops and PM tasks in smaller portions with a mentor, shadowing meetings and observing how seniors work, doing mini-projects or research assignments (e.g. \"find out why process X is slow\"), attending training sessions, working through modules and presenting what was learned, doing administrative work (recaps, documentation, data entry), with periodic evaluations from the mentor."
     ],
-    box: "<strong>SOPs you must master (3 layers):</strong> (a) project stages, (b) documentation/BIM standards, (c) building codes and culture of each region."
+    box: "<strong>How to choose:</strong> love systems & data → Ops. Love coordinating people & timelines → PM/PC. Still exploring and want guidance → Trainee. All three are doors into a remote career with interconnected skills."
   },
   s2: {
-    heading: "2. Project stages",
-    ukTitle: "UK: RIBA Plan of Work 2020",
-    tableHead: ["Stage", "Name", "Core"],
-    ukRows: [["0","Strategic Definition","client needs, business case"],["1","Preparation & Briefing","brief, feasibility, surveys"],["2","Concept Design","concept, massing, test fit"],["3","Spatial Coordination","architect\u2013structure\u2013MEP coordination, planning application"],["4","Technical Design","technical drawings, specifications, Building Regulations"],["5","Manufacturing & Construction","shop drawings, RFI, site"],["6","Handover","as-built, O&M manual"],["7","Use","operation"]],
-    ukRef: "Reference: RIBA Plan of Work 2020 Overview (RIBA website).",
-    usTitle: "US: AIA phases",
-    usP: "Pre-Design \u2192 Schematic Design (SD) \u2192 Design Development (DD) \u2192 Construction Documents (CD) \u2192 Bidding/Negotiation \u2192 Construction Administration (CA).",
-    usTerms: "<strong>Key terms:</strong> RFI, submittal, ASI (Architect\u2019s Supplemental Instruction), bulletin, addendum, punch list, change order.",
-    meTitle: "Middle East (UAE/KSA/Qatar)",
-    meP: "Typically a mix of UK and US styles: Concept \u2192 Schematic \u2192 Detailed Design \u2192 Authority Approval \u2192 Tender \u2192 IFC (Issued for Construction) \u2192 Shop Drawings \u2192 As-Built. Authority approvals (municipality, civil defense, utilities) heavily drive the schedule."
+    heading: "2. A day-in-the-life simulation",
+    ukTitle: "Junior Project Coordinator at a digital agency (WIB time zone)",
+    tableHead: ["Time", "What happens", "Lesson"],
+    ukRows: [
+      ["08.30", "Open office Slack/WhatsApp and email. A client message: \"We still haven't received the landing page revision, when will it come?\" — logged as a priority.", "Start the day triaging the inbox; note what is waiting on an answer."],
+      ["09.00", "Check the board (Trello/Asana): of 12 tasks this week, 2 are due today and 1 is late. Message the designer: \"Hi Rani, Client A's landing page revision is targeted for today. Any blockers?\" Rani turns out to be waiting on the client's final logo — that's the blocker.", "Check task status first, then ask; surface blockers early."],
+      ["09.30", "Email the client: request the final logo with a 12:00 cutoff so the design can finish today. Also tell your manager about the slip risk if the client doesn't reply.", "Solve the blocker at its source, and escalate risks early."],
+      ["10.00", "15-minute daily standup via Zoom/Meet: what I did yesterday, what I'm doing today, what's blocking me. You take notes and post a summary in the Slack channel.", "Short standups; brief notes shared to the channel."],
+      ["11.00", "Your manager asks for a new project timeline for Client B. You build it in a spreadsheet/Notion: phases, tasks, durations, owners, milestones, then send it for review.", "The timeline document is a coordinator's main tool."],
+      ["12.00", "Lunch break.", "Keep your work boundaries."],
+      ["13.00", "Client follow-up: the logo arrived. Forward it to Rani and update the task status on the board.", "Follow up on time; keep the board accurate at all times."],
+      ["14.00", "Weekly client meeting (30 minutes), you are the note-taker. The client asks for one extra website page — you log it as a change request. After the meeting, check with the manager: in scope, or extra cost?", "Log new requests as change requests; never promise on the spot."],
+      ["15.00", "Write the meeting notes: decisions, action items, who does what, and when — send to the client and team.", "Notes go out right after the meeting, not tomorrow."],
+      ["16.00", "Documentation & admin: update the risk log, tidy the Google Drive folders, log hours in the timesheet.", "Admin is part of the job, not leftover time."],
+      ["17.00", "Wrap up: send a short daily report to the manager — \"Today: 2 tasks done, 1 blocker (logo) resolved, 1 change request in awaiting a decision. Tomorrow: send the client revision and start the development phase.\"", "End the day with a scannable update."]
+    ],
+    ukRef: "The same pattern repeats daily: morning triage → check the board → clear blockers → standup → build/maintain documents → meetings & notes → admin → daily report.",
+    usTitle: "Ops Coordinator simulation at an e-commerce company",
+    usP: "Morning: check the order dashboard — 15 orders stuck because of stock-outs; contact the warehouse team and suppliers for restock certainty. Midday: a customer complains about the wrong item shipped — open a ticket, coordinate with the courier for the return, update the status to customer service. Afternoon: recap the day's orders into a spreadsheet, flag the problematic ones, and update the returns-handling SOP since this case keeps repeating.",
+    usTerms: "<strong>The ops pattern:</strong> watch the dashboard → handle tickets/problems → coordinate across teams → recap data → update the SOP when a pattern repeats.",
+    meTitle: "What a Remote Trainee's day looks like",
+    meP: "Rotation across divisions: mornings helping with small-portion ops/PM tasks, midday shadowing senior meetings, afternoons on mini-projects or research (e.g. \"find out why process X is slow\") or administrative work (recaps, documentation, data entry), plus training sessions and periodic mentor evaluations."
   },
   s3: {
-    heading: "3. BIM and information management (essential for remote work)",
-    p: "The most valuable area because remote clients rely heavily on file discipline.",
+    heading: "3. Skills and tools in use",
+    p: "All of the roles above revolve around the same tools and habits:",
     items: [
-      "<strong>ISO 19650 (Parts 1 & 2):</strong> EIR (Employer\u2019s Information Requirements), BEP (BIM Execution Plan), MIDP/TIDP, CDE (Common Data Environment), status WIP / Shared / Published / Archive.",
-      "<strong>UK BIM Framework:</strong> guidance and templates (ukbimframework.org).",
-      "<strong>ISO 19650 naming convention:</strong> Project-Originator-Volume-Level-Type-Role-Number (widely used in UK & Middle East).",
-      "<strong>Concepts:</strong> LOD/LOIN (Level of Information Need), IFC, COBie, BCF (issue tracking).",
-      "<strong>US:</strong> National BIM Standard (NBIMS-US), AIA G202/E203 (BIM protocol & LOD spec).",
-      "<strong>Revit:</strong> shared coordinates, worksets, linked models, design options, phasing, family management, model audit/purge."
+      "<strong>Communication:</strong> Slack, WhatsApp, Zoom, Google Meet, email.",
+      "<strong>Task management:</strong> Trello, Asana, Jira, ClickUp, Notion.",
+      "<strong>Documents:</strong> Google Docs/Sheets, Excel (basic to intermediate).",
+      "<strong>Soft skills:</strong> clear written communication, consistent follow-up, time management, proactivity."
     ],
-    cde: "<strong>CDE platforms:</strong> Autodesk Construction Cloud (BIM 360), Trimble Connect, Aconex, Revizto, Procore (US), SharePoint."
+    cde: "<strong>Highest value skill:</strong> writing updates that are clear and short. That is a big plus in remote work — most of your work is seen through writing, not presence."
   },
   s4: {
-    heading: "4. Drawing standards (CAD/drafting)",
+    heading: "4. Tips before applying",
     items: [
-      "<strong>US:</strong> National CAD Standard (NCS), AIA CAD Layer Guidelines; sheet numbering (A-101, A-201), discipline designators; units: feet-inch.",
-      "<strong>UK:</strong> BS 8541 series, BS EN ISO 7519, UK NBS Chorus/BIM Toolkit; units: metric (mm).",
-      "<strong>Middle East:</strong> usually follows the consultant office standard (BS/ISO mix); metric; often bilingual for certain tags."
+      "<strong>Written communication first:</strong> if you can write updates that are clear and short, that is a big plus — it is exactly what gets judged daily.",
+      "<strong>Proactive beats smart:</strong> you do the chasing, not the other way around.",
+      "<strong>Build proof:</strong> learn basic Trello/Asana and Notion, then create one simulated project (e.g. planning an event) for your portfolio.",
+      "<strong>Certificates are optional:</strong> the Google Project Management Certificate can help, but it is not a requirement. Hands-on practice speaks louder."
     ],
-    must: "<strong>Must-know:</strong> sheet/title block, revision cloud + revision schedule, drawing register/issue sheet/transmittal, scale/line weights/hatching/dimensioning, door/window/finish schedules, section/detail callouts, symbol legend, north point, grid & level."
+    must: "<strong>The minimum viable portfolio:</strong> three documents — one clean set of meeting notes, one project timeline + risk log, and one sample daily report. Put them in one Google Drive folder or a public Notion page; that alone can serve as the simple portfolio you attach when applying."
   },
   s5: {
-    heading: "5. Codes, regulations, and standards by region",
-    uk: { title: "\ud83c\uddec\ud83c\udde7 UK", items: [
-      "Building Regulations 2010 & Approved Documents (gov.uk): A (structure), B (fire), C, E (acoustics), F (ventilation), L (energy), M (access), O (overheating), P, Q, R, S.",
-      "Building Safety Act 2022 (gateways, higher-risk buildings, \u201cgolden thread\u201d).",
-      "Planning: NPPF, Local Plan, Design & Access Statement. CDM Regulations 2015 (H&S, Principal Designer).",
-      "BS 9999/9991 (fire), BS 8300 (inclusive design), Eurocodes + UK NA. Specs: NBS. Contracts: JCT, NEC4, RIBA. Sustainability: BREEAM, Part L, SAP/SBEM."
+    heading: "5. Three portfolio exercises",
+    uk: { title: "Exercise 1: Meeting Notes (30 minutes)", items: [
+      "Scenario: you are a coordinator at an agency. Excerpt from a weekly client meeting: Client — \"We want to launch on the 30th. Can we?\". Designer — \"Yes, if your materials arrive by the 20th at the latest.\". Client — \"Okay, but we want an 'About Us' page added.\". Manager — \"That's outside the initial scope; we'll send a cost estimate.\". Client — \"Final logo coming soon, maybe tomorrow.\"",
+      "The format to write — <strong>Meeting Notes: Client A Weekly Sync</strong>; Date &amp; Attendees; <strong>Decisions:</strong> launch target the 30th; <strong>Action Items:</strong> Client sends content (deadline 20), Client sends the final logo (tomorrow), Manager sends the extra-page cost estimate (write the date); <strong>Risks/Notes:</strong> materials late past the 20th → launch at risk of slipping; the \"About Us\" page = change request, awaiting cost approval.",
+      "The key point: every action item must have a name and a date. Notes without that are useless."
     ]},
-    us: { title: "\ud83c\uddfa\ud83c\uddf8 US", items: [
-      "IBC/IRC + state/city amendments (CBC, NYC BC, Florida FBC, etc.); free reading at codes.iccsafe.org.",
-      "ADA 2010 Standards, ICC A117.1 (accessibility). NFPA 101/13/72 (fire/life safety).",
-      "ASHRAE 90.1/IECC (energy), ASCE 7 (loads), ACI/AISC (structure). CSI MasterFormat 2018 & UniFormat. Contracts: AIA A201, B101. Sustainability: LEED, WELL, Energy Star.",
-      "Understand occupancy classification, construction type, allowable area/height, egress (IBC core)."
+    us: { title: "Exercise 2: Project Timeline (1–2 hours)", items: [
+      "Scenario: you are asked to plan a 100-attendee webinar event within 4 weeks.",
+      "Build it in Google Sheets or Notion with columns: Phase | Task | Owner | Start | Deadline | Status | Notes.",
+      "Phases: Planning, Preparation (speakers, content, platform), Promotion, Execution, Evaluation.",
+      "Add one Risk Log tab with at least 3 risks — e.g. a speaker cancels, low attendance, platform failure. For each risk, write the impact and the backup plan."
     ]},
-    me: { title: "\ud83c\udde6\ud83c\uddea\ud83c\uddf8\ud83c\udde6\ud83c\uddf6\ud83c\udde6 Middle East", items: [
-      "<strong>UAE:</strong> Dubai Building Code, DM/Trakhees/DDA, ADIBC & DMT/ADM, UAE Fire and Life Safety Code (Civil Defence), Estidama (Abu Dhabi), Al Sa\u2019fat (Dubai).",
-      "<strong>Saudi Arabia:</strong> Saudi Building Code (SBC), Mostadam, Balady/Monshaat.",
-      "<strong>Qatar:</strong> QCS, GSAS, Civil Defence.",
-      "<strong>Regional factors:</strong> extreme heat (shading, glazing, cooling), privacy (villas, mashrabiya), majlis, prayer room/qibla orientation, gender separation (certain projects), strict fire codes & Civil Defence role; major projects often have bespoke design guidelines."
+    me: { title: "Exercise 3: Daily Report (10 minutes)", items: [
+      "Practice writing a short update for your manager in a scannable format: <strong>Update [date]</strong> — Done: ... / In progress: ... / Blocker: ... (help needed: ...) / Tomorrow: ...",
+      "Fill it with your own simulated project — not empty, not rambling."
     ]}
   },
-  s6: { heading: "6. Technical design fundamentals to master", items: [
-    "Space planning & ergonomics (Neufert, Metric Handbook).",
-    "Egress & fire: travel distance, exit width, compartmentation, fire rating, stair/lobby.",
-    "Accessibility: ramp, lift, toilet, door clearance.",
-    "Building envelope: wall/roof build-up, U-value, waterproofing, thermal bridge, curtain wall.",
-    "Detailing: sill, threshold, parapet, expansion/movement joint.",
-    "Structure & MEP coordination: grid, floor-to-floor, ceiling void, riser, clash detection.",
-    "Vertical transport, parking, facade. Specifications/materials (finish schedule, product data).",
-    "Sustainability: passive design, daylight, embodied carbon."
-  ]},
-  s7: { heading: "7. Software and technical skills", items: [
-    "<strong>Essential:</strong> Revit, AutoCAD.",
-    "<strong>Highly useful:</strong> Navisworks (clash), Bluebeam Revu (markup, dominant in US), Dynamo, Rhino/Grasshopper.",
-    "<strong>Visualization:</strong> Enscape, Twinmotion, D5, V-Ray.",
-    "<strong>Collaboration:</strong> Teams/Slack, ACC, Revizto, Miro.",
-    "<strong>Certifications:</strong> Autodesk Certified Professional (Revit), buildingSMART Professional (ISO 19650/IFC), BIM Level 2 / ISO 19650 courses (BRE, BSI, Autodesk)."
-  ]},
-  s8: {
-    heading: "8. Remote work SOP (what sets professionals apart)",
-    wfTitle: "Daily workflow",
-    wf: ["Receive task & understand scope: what, level of detail, deadline, format.","Read client BEP/office standards before touching the model.","Work in the model/central file per rules (worksets, naming, versioning).","Self-check before sending (see checklist).","Send with a transmittal/clear message: what changed, what\u2019s pending, open questions.","Log revisions and feedback."],
-    qaTitle: "QA checklist before submit",
-    qa: ["[ ] Sheet number/title/revision correct, title block filled","[ ] No critical warnings, model audited/purged","[ ] Dimensions, levels, grids, tags, schedules consistent across sheets","[ ] Notation and layers follow client standards","[ ] Section/detail references not broken","[ ] Units correct (mm vs ft-in)","[ ] File naming follows convention","[ ] Changes clouded and logged"],
-    comTitle: "Communication",
-    com: ["Write clearly and concisely; ask about ambiguities before going far.","Manage time zones: UK (GMT/BST), US (EST\u2013PST), Gulf (GMT+3/+4). Agree on overlap hours.","Give proactive updates; don\u2019t go silent when blocked."],
-    bizTitle: "Business and legal",
-    biz: ["NDA & data security (do not store client files on personal devices without permission).","Contract: scope, revision count, copyright (usually client-owned), payment, termination.","Payment: Wise, Payoneer, bank transfer; understand tax obligations as a freelancer in Indonesia.","Do not claim licenses or take responsibility beyond your authority."]
+  s6: {
+    heading: "6. Where to find entry-level remote openings",
+    uk: { title: "Local (Indonesia)", items: [
+      "<strong>LinkedIn:</strong> filter \"Remote\" + keywords like operations coordinator, project coordinator, management trainee, virtual assistant.",
+      "<strong>Glints &amp; Kalibrr:</strong> plenty of trainee and internship positions.",
+      "<strong>JobStreet:</strong> filter location \"Remote\"."
+    ]},
+    us: { title: "Global (usually paid in USD)", items: [
+      "We Work Remotely, Remote OK, Himalayas, Working Nomads.",
+      "Remote.co and Wellfound — a good fit for startups."
+    ]},
+    me: { title: "Useful search keywords", items: [
+      "operations assistant, project coordinator, program coordinator, customer success associate, business operations intern, executive assistant."
+    ]}
   },
-  s9: { heading: "9. Reading list (priority order)", online: "<strong>Free / online:</strong> RIBA Plan of Work 2020 Overview; UK Building Regulations: Approved Documents (gov.uk, start with B, M, L); UK BIM Framework (ukbimframework.org); ICC Digital Codes (codes.iccsafe.org \u2014 IBC Ch. 3,5,6,7,9,10,11); National CAD Standard (NIBS/buildingSMART); official sites of Dubai Municipality, ADM, UAE Civil Defence, Saudi Building Code Committee; Autodesk Revit docs & BIM learning.", books: "<strong>Books:</strong> Neufert (Architects\u2019 Data); Metric Handbook (Pamela Buxton); Building Construction Illustrated (F.D.K. Ching); Fundamentals of Building Construction (Allen & Iano); Time-Saver Standards for Architectural Design; Mechanical and Electrical Equipment for Buildings (Grondzik); Architect\u2019s Handbook of Professional Practice (AIA); ISO 19650 guides (BSI/BRE)." },
-  s10: { heading: "10. 90-day roadmap", m1: "<strong>Month 1 \u2014 Foundation:</strong> RIBA stages + AIA phases, terms & sheet organization; intermediate Revit (families, schedules, sheets, worksets); Approved Documents B & M and IBC egress/accessibility summary.", m2: "<strong>Month 2 \u2014 Standards and BIM:</strong> ISO 19650 + naming convention, CDE practice (ACC trial); NCS & UK drafting standards; 1 complete practice project (villa/low-rise) from concept to CD.", m3: "<strong>Month 3 \u2014 Portfolio and market:</strong> 3 sample projects \u2014 UK (metric, Part M/B), US (IBC/ADA, ft-in), Gulf (villa/mid-rise, privacy & regional fire code); portfolio set + Revit model + mini BEP; start applying (LinkedIn: \u201cBIM Modeller/Architectural Technician/Revit Technician remote\u201d, Upwork/Fiverr, BIM outsourcing studios, Gulf consultants, small UK/US firms)." }
+  s7: {
+    heading: "7. Watch out for job scams",
+    items: [
+      "Avoid postings that charge registration fees or paid training up front.",
+      "Avoid processes that immediately move to Telegram/WhatsApp without a formal interview.",
+      "Legitimate companies have a company email address and a clear interview process; check the company name before handing over personal data.",
+      "Never send sensitive data (ID numbers, full bank details, passwords) before there is a valid employment agreement."
+    ],
+    must: "<strong>Rule of thumb:</strong> if you are the one being asked to pay, it is not a job. If the process is rushed and unclear, that is a red flag."
+  },
+  s8: {
+    heading: "8. Daily remote work SOP (what separates professionals)",
+    wfTitle: "Daily routine",
+    wf: ["Inbox triage: Slack, office WhatsApp, email — log priorities.","Check the board: today's tasks, late ones, stuck ones.","Follow up blockers at the source (vendor/client/team) — don't wait to be chased.","Update documents: meeting notes, timeline, risk log.","Send written updates: the daily report in the Done/In progress/Blocker/Tomorrow format.","Close the day: timesheet, tidy folders, notes for tomorrow."],
+    qaTitle: "Checklist before sending a document",
+    qa: ["[ ] Every action item has an owner (PIC) and a date","[ ] Every risk has impact + backup plan","[ ] Numbers in the document match the source data (spreadsheet/board)","[ ] Change requests are flagged, never promised directly","[ ] Concise and scannable (30-second scan)","[ ] File naming follows office convention"],
+    comTitle: "Communication",
+    com: ["Write clearly & briefly; ask about ambiguity before going deep.","Manage time zones: note client/team time zones and agree on overlap hours.","Give proactive updates; don't go silent when blocked — raise the blocker and ask for help.","Record meetings: decisions, action items, who-when, sent right after the meeting."],
+    bizTitle: "Business and legal",
+    biz: ["Understand your work agreement: scope, work hours, payment clauses (what Net?), scope-change clauses.","Work hours & availability must be explicit — beware 24/7 on-call clauses.","Payments: local bank transfer/currency matters; understand your tax obligations per employment status.","Keep your work documentation (notes, timelines, reports) — it is your performance record at evaluations and in your next job hunt."]
+  },
+  s9: { heading: "9. Learning list (in priority order)", online: "<strong>Free / online:</strong> official Trello, Asana, and Notion documentation (official tutorials + free templates); basic-to-intermediate Google Sheets; public meeting notes & timeline templates; the Google Project Management Certificate (Coursera, paid but scholarships/audit often available); ops & PM guides on the We Work Remotely/Remote OK blogs.", books: "<strong>Mandatory practice before applying:</strong> one end-to-end simulated project (e.g. planning a 100-person webinar/event): timeline + risk log + meeting notes + daily report. That alone can become the portfolio you attach when applying." },
+  s10: { heading: "10. 90-day roadmap", m1: "<strong>Month 1 — Foundations:</strong> master basic Trello/Asana and Notion; Google Sheets (sort, filter, simple pivot); practice writing a daily update every day for two weeks; read 10+ job postings to memorize role keywords.", m2: "<strong>Month 2 — Simulated project:</strong> run one end-to-end simulated project (a 100-person webinar/event over 4 weeks): timeline + risk log + meeting notes + daily report; have a friend play a \"client\" who keeps changing requirements; practice disruption replies (accept/reject/counter in one sentence).", m3: "<strong>Month 3 — Portfolio and applications:</strong> collect the three practice documents in a public Drive/Notion folder; write a LinkedIn summary that mentions written communication skills and tools; start applying on LinkedIn/Glints/Kalibrr/JobStreet (local) and We Work Remotely/Remote OK/Himalayas (global); prepare interview answers: \"tell me how you handled a blocker\" and \"show me your meeting notes\"." }
 };

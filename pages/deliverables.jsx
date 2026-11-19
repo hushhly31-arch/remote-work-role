@@ -4,12 +4,6 @@ import Link from 'next/link';
 import { deliverables } from '@/data.js';
 import useTranslation from '@/hooks/useTranslation';
 
-const refImages = {
-  1: { src: '/img/refs/plan-reference.svg', alt: 'Plan and RCP reference' },
-  2: { src: '/img/refs/elevation-reference.svg', alt: 'Interior elevations reference' },
-  3: { src: '/img/refs/unit-sketch.svg', alt: 'Render composition reference' },
-};
-
 const DeliverablesPage = () => {
   const { t } = useTranslation();
   const d = t.deliverables;
@@ -57,12 +51,6 @@ const DeliverablesPage = () => {
                 </span>
               )}
             </div>
-            {refImages[item.id] && (
-              <figure style={{ margin: '0 0 1rem' }}>
-                <img src={refImages[item.id].src} alt={refImages[item.id].alt} style={{ width: '100%', maxWidth: 760, border: '1px solid var(--border-light)', borderRadius: 'var(--radius-md)', background: '#fff' }} />
-                <figcaption className="text-muted" style={{ fontSize: '0.8rem', marginTop: '0.4rem' }}>{d.referenceLabel || 'Reference image (example guidance)'}</figcaption>
-              </figure>
-            )}
             <p className="text-secondary" style={{ marginBottom: '1rem' }}>{item.description}</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1rem' }}>
               <div>

@@ -33,6 +33,7 @@ const LanguageSwitcher = ({ floating = false }) => {
 
 const Layout = ({ children, showLanguageSwitcher = true }) => {
   const router = useRouter();
+  const { t } = useTranslation();
   const currentPath = router.asPath.split('?')[0].replace(/^\/(id|en)(?=\/|$)/, '') || '/';
   const [timeLeft, setTimeLeft] = useState(null);
   const [isWarning, setIsWarning] = useState(false);
@@ -124,8 +125,8 @@ const Layout = ({ children, showLanguageSwitcher = true }) => {
       <div className="app-shell">
         <aside className="sidebar" role="navigation" aria-label="Simulation stages">
           <div className="sidebar-header">
-            <span className="studio-badge">AW</span>
-            <span className="project-code">AW-2026-047</span>
+            <span className="studio-badge">TD</span>
+            <span className="project-code">TDA-2026-012</span>
           </div>
           <nav className="sidebar-nav">
             <ul className="stage-list" role="list">

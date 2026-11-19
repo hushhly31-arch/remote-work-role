@@ -9,13 +9,13 @@ const ResultsPage = () => {
   const [scores, setScores] = useState({});
 
   const tabs = [
-    { id: 'senior', label: 'Senior Architect Feedback' },
-    { id: 'pm', label: 'PM Comment' },
-    { id: 'contract', label: 'Contract Evaluation' },
-    { id: 'rubric', label: 'Score Rubric' },
-    { id: 'email', label: 'Email Examples' },
-    { id: 'decision', label: 'Final Decision' },
-    { id: 'credential', label: 'Credential' },
+    { id: 'senior', label: 'Feedback Manajer' },
+    { id: 'pm', label: 'Komentar PM' },
+    { id: 'contract', label: 'Evaluasi Perjanjian' },
+    { id: 'rubric', label: 'Rubrik Skor' },
+    { id: 'email', label: 'Contoh Email' },
+    { id: 'decision', label: 'Keputusan Akhir' },
+    { id: 'credential', label: 'Kredensial' },
   ];
 
   const calculateScore = () => {
@@ -90,7 +90,7 @@ const ResultsPage = () => {
           {activeTab === 'pm' && (
             <div role="tabpanel">
               <div className="feedback-item">
-                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Project Manager Comment</h4>
+                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Komentar Project Manager</h4>
                 <pre className="text-mono" style={{ 
                   whiteSpace: 'pre-wrap', 
                   lineHeight: 1.7, 
@@ -110,8 +110,8 @@ const ResultsPage = () => {
           {activeTab === 'contract' && (
             <div role="tabpanel">
               <div className="feedback-item">
-                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Contract Clause Evaluation</h4>
-                <p className="text-secondary mb-4">Did Nuha catch the 3 problematic clauses? What notes should have been written?</p>
+                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Evaluasi Klausul Perjanjian</h4>
+                <p className="text-secondary mb-4">Apakah kamu menemukan 3 klausul bermasalah? Apa catatan yang seharusnya ditulis?</p>
                 {results.contractEvaluation.caughtClauses.map((c, i) => (
                   <div key={i} style={{ 
                     background: 'var(--bg-card)', 
@@ -135,8 +135,8 @@ const ResultsPage = () => {
                         {c.caught ? 'Caught' : 'Missed'}
                       </span>
                     </div>
-                    <p className="mb-2" style={{ fontSize: '0.9rem' }}><strong>Nuha's Note:</strong> {c.note || '(none)'}</p>
-                    <p className="mb-0" style={{ fontSize: '0.9rem' }}><strong>Should Have Written:</strong> {results.contractEvaluation.recommendedNotes[i]}</p>
+                    <p className="mb-2" style={{ fontSize: '0.9rem' }}><strong>Catatan kamu:</strong> {c.note || '(tidak ada)'}</p>
+                    <p className="mb-0" style={{ fontSize: '0.9rem' }}><strong>Seharusnya ditulis:</strong> {results.contractEvaluation.recommendedNotes[i]}</p>
                   </div>
                 ))}
               </div>
@@ -146,8 +146,8 @@ const ResultsPage = () => {
           {activeTab === 'rubric' && (
             <div role="tabpanel">
               <div className="feedback-item">
-                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Scoring Rubric — Self-Assessment</h4>
-                <p className="text-secondary mb-4">Rate each criterion 0–100%. Weighted total shown below.</p>
+                <h4 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Rubrik Penilaian — Penilaian Diri</h4>
+                <p className="text-secondary mb-4">Beri nilai tiap kriteria 0–100%. Total berbobot ditampilkan di bawah.</p>
                 {results.rubric.map((r, i) => (
                   <div key={i} style={{ marginBottom: '1.5rem' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -172,14 +172,14 @@ const ResultsPage = () => {
                     </ul>
                     <div>
                       <small className={((scores[r.criteria] || 0) >= 60) ? 'text-success' : 'text-danger'}>
-                        Pass threshold: {r.pass}
+                        Batas lolos: {r.pass}
                       </small>
                     </div>
                   </div>
                 ))}
                 <hr style={{ borderColor: 'var(--border-light)', margin: '1.5rem 0' }} />
-                <div style={{ textAlign: 'center' }}>
-                  <p className="text-muted" style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>Weighted Total</p>
+                  <div style={{ textAlign: 'center' }}>
+                    <p className="text-muted" style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.25rem' }}>Total Berbobot</p>
                   <div className="text-mono" style={{ fontSize: '3rem', fontWeight: 700, color: offered ? 'var(--success)' : 'var(--danger)' }}>
                     {totalScore}/100
                   </div>
@@ -198,7 +198,7 @@ const ResultsPage = () => {
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                         <polyline points="22 4 12 14.01 9 11.01" />
                       </svg>
-                      <h4 className="fw-bold mb-0" style={{ fontSize: '1rem' }}>Pass Level Email</h4>
+                      <h4 className="fw-bold mb-0" style={{ fontSize: '1rem' }}>Email Level Lolos</h4>
                     </div>
                     <pre className="text-mono" style={{ 
                       whiteSpace: 'pre-wrap', 
@@ -222,7 +222,7 @@ const ResultsPage = () => {
                         <line x1="15" y1="9" x2="9" y2="15" />
                         <line x1="9" y1="9" x2="15" y2="15" />
                       </svg>
-                      <h4 className="fw-bold mb-0" style={{ fontSize: '1rem' }}>Fail Level Email</h4>
+                      <h4 className="fw-bold mb-0" style={{ fontSize: '1rem' }}>Email Level Gagal</h4>
                     </div>
                     <pre className="text-mono" style={{ 
                       whiteSpace: 'pre-wrap', 
@@ -237,7 +237,7 @@ const ResultsPage = () => {
 {results.emailExamples.fail}
                     </pre>
                     <p className="text-danger" style={{ fontSize: '0.8rem', marginTop: '0.75rem', marginBottom: 0 }}>
-                      <strong>Why it fails:</strong> {results.emailExamples.failReason}
+                      <strong>Kenapa gagal:</strong> {results.emailExamples.failReason}
                     </p>
                   </div>
                 </div>
@@ -274,18 +274,18 @@ const ResultsPage = () => {
                   {offered ? 'Offered Next Project' : 'Not Moving Forward'}
                 </h1>
                 <p className="text-secondary" style={{ fontSize: '1.125rem', margin: 0 }}>
-                  Score: <strong className="text-mono">{totalScore}/100</strong> | Threshold: 70
+                  Skor: <strong className="text-mono">{totalScore}/100</strong> | Batas: 70
                 </p>
                 <div style={{ width: '100%', maxWidth: '500px', marginTop: '1.5rem', textAlign: 'left' }}>
-                  <h5 className="fw-bold mb-2" style={{ fontSize: '0.9rem' }}>Decision Logic</h5>
+                  <h5 className="fw-bold mb-2" style={{ fontSize: '0.9rem' }}>Logika Keputusan</h5>
                   <ul style={{ paddingLeft: '1.25rem', fontSize: '0.9rem', opacity: 0.85 }}>
-                    <li>Total ≥ 70 AND all pass thresholds met → Offered</li>
-                    <li>Total {"<"} 70 OR any critical fail (0 clauses caught, 0 errors found, late) → Not Moving Forward</li>
+                    <li>Total ≥ 70 DAN semua batas lolos terpenuhi → Offered</li>
+                    <li>Total {"<"} 70 ATAU ada critical fail (0 klausul tertangkap, 0 error ditemukan, telat) → Not Moving Forward</li>
                   </ul>
                 </div>
-                <div style={{ 
-                  marginTop: '1.5rem', 
-                  padding: '1rem', 
+                <div style={{
+                  marginTop: '1.5rem',
+                  padding: '1rem',
                   borderRadius: 'var(--radius-md)',
                   background: 'rgba(255,255,255,0.2)',
                   width: '100%',
@@ -293,9 +293,9 @@ const ResultsPage = () => {
                   textAlign: 'left'
                 }}>
                   <p className="mb-0" style={{ fontSize: '0.9rem' }}>
-                    {offered 
-                      ? 'Senior Architect: "Clean enough to iterate. Fix the wardrobe internals and emergency light. Next brief comes Monday."'
-                      : 'Senior Architect: "Missed the portfolio clause. That\'s a career limiter. Contract reading is not optional."'}
+                    {offered
+                      ? 'Manajer: "Cukup rapi untuk lanjut. Perbaiki action item tanpa tanggal dan risk log tanpa rencana. Brief berikutnya dikirim Senin."'
+                      : 'Manajer: "Ketinggalan klausul Net 45. Itu yang bikin bayaranmu molor. Membaca perjanjian bukan opsional."'}
                   </p>
                 </div>
               </div>
@@ -315,19 +315,19 @@ const ResultsPage = () => {
                   </div>
                   <div className="credential-body">
                     <div className="credential-field">
-                      <div className="credential-field-label">Project Code</div>
+                      <div className="credential-field-label">Kode Proyek</div>
                       <div className="credential-field-value text-mono">{credentials.projectCode}</div>
                     </div>
                     <div className="credential-field">
-                      <div className="credential-field-label">Issued</div>
-                      <div className="credential-field-value">{new Date().toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                      <div className="credential-field-label">Diterbitkan</div>
+                      <div className="credential-field-value">{new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
                     </div>
                     <div className="credential-field">
-                      <div className="credential-field-label">Verification ID</div>
+                      <div className="credential-field-label">ID Verifikasi</div>
                       <div className="credential-field-value text-mono">{credentials.previewData.verificationId}</div>
                     </div>
                     <div className="credential-field">
-                      <div className="credential-field-label">Total Score</div>
+                      <div className="credential-field-label">Total Skor</div>
                       <div className="credential-field-value text-mono fw-bold" style={{ fontSize: '1.25rem' }}>{totalScore}%</div>
                     </div>
                   </div>
@@ -376,8 +376,8 @@ const ResultsPage = () => {
                     Public verification: <a href={credentials.previewData.credentialUrl} target="_blank" rel="noopener noreferrer">{credentials.previewData.credentialUrl}</a>
                   </p>
                   <hr style={{ borderColor: 'var(--border-light)', margin: '1.5rem 0' }} />
-                  <h5 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Privacy Settings</h5>
-                  <p className="text-secondary mb-3" style={{ fontSize: '0.9rem' }}>Choose what appears on your public verification page.</p>
+                  <h5 className="fw-bold mb-3" style={{ fontSize: '1rem' }}>Pengaturan Privasi</h5>
+                  <p className="text-secondary mb-3" style={{ fontSize: '0.9rem' }}>Pilih apa yang muncul di halaman verifikasi publik kamu.</p>
                   <div className="privacy-toggle">
                     {credentials.privacyOptions.map((opt) => (
                       <label key={opt.key} className="privacy-option">
@@ -398,12 +398,12 @@ const ResultsPage = () => {
                     <path d="M12 17v4" />
                     <line x1="12" y1="8" x2="12" y2="8.01" />
                   </svg>
-                  <h3 className="fw-bold mb-1" style={{ fontSize: '1.5rem' }}>Credential Not Earned</h3>
+                  <h3 className="fw-bold mb-1" style={{ fontSize: '1.5rem' }}>Kredensial Tidak Didapat</h3>
                   <p className="text-secondary mb-3" style={{ maxWidth: '400px', margin: '0 auto' }}>
-                    Minimum 70% total score with no criterion below 50% required. Your score: <strong className="text-mono">{totalScore}%</strong>
+                    Minimal skor total 70% dan tidak ada kriteria di bawah 50%. Skor kamu: <strong className="text-mono">{totalScore}%</strong>
                   </p>
                   <p className="text-muted" style={{ fontSize: '0.9rem' }}>
-                    You still receive full feedback and rubric scores. Retake the simulation to earn a credential.
+                    Kamu tetap menerima feedback lengkap dan skor rubrik. Ulangi simulasi untuk mendapat kredensial.
                   </p>
                 </div>
               )}
@@ -418,7 +418,7 @@ const ResultsPage = () => {
             <polyline points="1 4 1 10 7 10" />
             <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
           </svg>
-          Restart Simulation
+          Ulangi Simulasi
         </Link>
       </div>
     </Fragment>

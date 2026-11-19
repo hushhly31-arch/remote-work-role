@@ -45,7 +45,7 @@ const DisruptionPage = () => {
   }, [startTime]);
 
   const handleReply = (decision) => {
-    const text = prompt(`Reply to PM (one sentence). Decision: ${decision}`);
+    const text = prompt(`Balas ke PM (satu kalimat). Keputusan: ${decision}`);
     if (text) {
       const newReply = `${decision.toUpperCase()}: ${text}`;
       setReply(newReply);

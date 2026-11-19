@@ -1,484 +1,488 @@
 export const studio = {
-  name: "Axel & Wright Architects",
-  city: "Melbourne",
-  timezone: "AEDT (UTC+11)",
-  address: "Level 12, 367 Collins Street, Melbourne VIC 3000, Australia",
-  abn: "ABN 48 123 456 789",
-  email: "contracts@axelandwright.com.au",
-  seniorArchitect: "M. Wright",
-  pm: "Project Manager",
-  teamSize: "8 architects, 3 interior designers",
-  projectTypes: "Residential, co-living, small commercial",
-  tools: ["Slack", "Google Drive", "Email"],
+  name: "Terra Digital Agency",
+  city: "Jakarta",
+  timezone: "WIB (UTC+7)",
+  address: "Gedung Cyber 2 Lt. 8, Jl. HR Rasuna Said, Jakarta Selatan",
+  abn: "NIB 0123456789012",
+  email: "work@terradigital.id",
+  seniorArchitect: "R. Prameswari (Head of Delivery)",
+  pm: "S. Chen (Project Manager)",
+  teamSize: "4 desainer, 3 developer, 2 CS, 1 ops",
+  projectTypes: "Website, landing page, webinar/event digital, konten",
+  tools: ["Slack", "Google Workspace", "Trello", "Zoom"],
 };
 
 export const septi = {
-  name: "Septi",
-  role: "Remote Architectural Designer",
-  rate: 45,
-  currency: "AUD",
-  rateNote: "Per hour, inclusive of superannuation equivalent. Tax obligations borne by freelancer.",
-  background: "Arsitek & Desainer Interior, freelance 2024–sekarang. Sebelumnya Desainer Interior di Darus Sakinah (2019–2024).",
-  location: "Pamekasan, Indonesia",
-  tools: ["SketchUp", "D5 Render", "Lumion", "AutoCAD", "Word", "Excel", "Google Sheets"],
+  name: "Kamu",
+  role: "Junior Project Coordinator (Remote)",
+  rate: "Rp40.000",
+  currency: "",
+  rateNote: "Per jam, selama minggu percobaan. Honor bulanan penuh mengikuti perjanjian di kontrak.",
+  background: "Fresh graduate, 1 tahun freelance admin & social media. Belajar manajemen proyek otodidak.",
+  location: "Bandung, Indonesia (WIB)",
+  tools: ["Slack", "WhatsApp", "Zoom", "Trello", "Notion", "Google Sheets"],
   languages: ["Indonesia", "Inggris"],
   linkedin: "belum terisi",
   behance: "belum terisi",
 };
 
 export const ops = {
-  name: "Ops",
-  role: "Operations Manager",
-  background: "Manages studio operations, workflows, and project coordination.",
-  location: "Melbourne, Australia",
-  tools: ["Slack", "Google Drive", "Notion", "Asana"],
+  name: "Ops Coordinator",
+  role: "Remote Operations (Ops Coordinator / Ops Assistant)",
+  background: "Menjaga proses harian bisnis tetap jalan: order, tiket, follow-up, SOP, laporan rutin.",
+  location: "Remote, WIB",
+  tools: ["CRM", "Google Sheets", "Slack", "Notion"],
 };
 
 export const consultant = {
-  name: "Consultant",
-  role: "Consultant",
-  background: "Provides expert advice on architectural projects and design.",
-  location: "Melbourne, Australia",
-  tools: ["AutoCAD", "Revit", "BIM 360"],
+  name: "Mentor",
+  role: "Remote Trainee Mentor",
+  background: "Mendampingi trainee: shadowing, evaluasi berkala, mini-project dan riset proses.",
+  location: "Remote, WIB",
+  tools: ["Notion", "Zoom", "Google Docs"],
 };
 
 export const projectManager = {
   name: "Project Manager",
-  role: "Project Manager",
-  background: "Manages project delivery, client communication, and timelines.",
-  location: "Melbourne, Australia",
-  tools: ["Slack", "Notion", "MS Project"],
+  role: "Remote Project Manager / Project Coordinator (Junior)",
+  background: "Memastikan proyek selesai sesuai scope, waktu, dan budget: board, meeting, notes, status report.",
+  location: "Remote, WIB",
+  tools: ["Trello", "Asana", "Notion", "Slack", "Zoom"],
 };
 
 export const contract = {
-  title: "Freelance Services Agreement — Project-Based",
-  projectName: "Co-Living Unit Fit-Out — Diponegoro Site",
-  projectCode: "AW-2026-047",
-  role: "Remote Architectural Designer",
+  title: "Perjanjian Kerja Remote — Project Coordinator (Minggu Percobaan)",
+  projectName: "Webinar Klien B: \"Digital Workflow 101\" — 100 peserta, 4 minggu",
+  projectCode: "TDA-2026-012",
+  role: "Junior Project Coordinator (Remote, WIB)",
   scope: [
-    "Produce working drawings for one co-living unit (bedroom + wet area) based on provided as-built and sketch.",
-    "Deliver: dimensioned plan (1:50), reflected ceiling plan (1:50), two interior elevations (1:50), one perspective render (1920×1080).",
-    "Incorporate PM mark-ups returned within 2 business days of each delivery.",
-    "Revisions until client approval — no cap on rounds.",
-    "File formats: .dwg (AutoCAD 2018), .pdf (press-ready), .jpg (render). Naming: AW-2026-047_[drawing-name]_[v#].",
-    "All source files handed over on final payment.",
+    "Menyusun meeting notes dari transkrip weekly sync klien A, memakai format standar agensi (keputusan, action items dengan nama + deadline, risiko).",
+    "Membuat timeline proyek webinar klien B: kolom Fase, Task, PIC, Mulai, Deadline, Status, Catatan.",
+    "Menambahkan Risk Log minimal 3 risiko — tiap risiko punya dampak dan rencana cadangan.",
+    "Menulis update harian untuk manajer: Selesai / Sedang jalan / Blocker / Besok.",
+    "Memperbarui status task di board (Trello) berdasarkan pesan dan data yang masuk.",
+    "Semua dokumen memakai template agensi. Naming file: TDA-2026-012_[nama-dok]_v#.",
   ],
   problematicClauses: [
     {
       id: 1,
-      text: "Revisions until client approval",
-      issue: "No cap on revision rounds. Could mean unlimited unpaid rework.",
+      text: "Scope dapat berubah sewaktu-waktu mengikuti kebutuhan klien, tanpa perubahan biaya",
+      issue: "Scope creep tanpa proteksi. Setiap permintaan tambahan klien dikerjakan gratis — jam kerja membengkak tanpa kompensasi.",
     },
     {
       id: 2,
-      text: "Payment terms: Net 45 from invoice date",
-      issue: "45-day payment cycle. Invoice submitted after final delivery means ~60+ days to first dollar.",
+      text: "Respons pesan kerja maksimal 15 menit, pukul 07.00–22.00 WIB, tujuh hari seminggu",
+      issue: "On-call hampir sepanjang hari, termasuk akhir pekan. Kerja remote tanpa batas waktu jelas berujung burnout dan lembur tak tercatat.",
     },
     {
       id: 3,
-      text: "Portfolio rights limited to static images only, subject to studio written consent per project",
-      issue: "Cannot show drawings, process, or 3D views without case-by-case permission. Weakens future marketing.",
+      text: "Honor dibayarkan setelah evaluasi akhir bulan, maksimal Net 45 setelah invoice disetujui manajer",
+      issue: "Pembayaran bisa molor 45+ hari dan bergantung pada 'persetujuan'. Kalau evaluasi diperselisihkan, bayaran molor lebih lama lagi.",
     },
   ],
   fee: {
-    amount: 1800,
-    currency: "AUD",
-    breakdown: "Fixed fee for defined deliverables. Includes up to 3 revision rounds. Additional rounds at AUD 75/hr.",
+    amount: "Rp3.500.000",
+    currency: "",
+    breakdown: "Honor bulanan full-time remote untuk minggu percobaan, mencakup seluruh tugas di scope. Tugas di luar scope diperjanjikan terpisah.",
   },
-  paymentTerms: "Net 45 from invoice date. Invoice issued upon final file handover. 50% deposit waived for this engagement. All tax, superannuation, and compliance obligations borne by freelancer. Payment via Wise (AUD to IDR). Freelancer covers receive fees.",
+  paymentTerms: "Net 45 setelah invoice disetujui manajer. Invoice dikirim tiap tanggal 1 via transfer bank. Pajak dan jaminan sosial menjadi tanggung jawab masing-masing pihak sesuai status kerja.",
   deadline: {
     minutes: 60,
-    startTrigger: "Start button clicked on Introduction page",
-    timezone: "AEDT (UTC+11)",
-    example: "If started at 09:00 AEDT, submit by 10:00 AEDT. Late submission = automatic withdrawal.",
+    startTrigger: "Tombol Start ditekan di halaman Introduction",
+    timezone: "WIB (UTC+7)",
+    example: "Kalau mulai 09.00 WIB, submit sebelum 10.00 WIB. Submit telat = otomatis gugur.",
   },
-  latePolicy: "Submission after deadline: contract void, no payment. Files not matching naming convention or format: rejected, clock keeps running. Corrupt/unopenable files: treated as non-submission.",
-  jurisdiction: "Victoria, Australia. Disputes resolved under Victorian law.",
+  latePolicy: "Submit setelah deadline: perjanjian batal, honor tidak dibayar. Dokumen tidak sesuai format/template: ditolak, jam terus berjalan. File korup atau tidak bisa dibuka: dianggap tidak mengumpulkan.",
+  jurisdiction: "Hukum Indonesia. Sengketa diselesaikan musyawarah terlebih dahulu, lalu melalui mediasi sesuai ketentuan kontrak.",
 };
 
 export const brief = {
-  from: "Septi, Remote Architectural Designer",
-  to: "Project Manager",
-  subject: "AW-2026-047 — Brief: Co-Living Unit Fit-Out",
-  body: `Project Manager,
+  from: "Kamu, Junior Project Coordinator",
+  to: "Project Manager (S. Chen)",
+  subject: "TDA-2026-012 — Brief: Paket Kerja Minggu Pertama",
+  body: `Koordinator,
 
-Contract attached. Read it. Clock starts when you hit Accept.
+Perjanjian kerja terlampir. Baca dulu. Jam mulai jalan ketika kamu menekan Accept.
 
-Project: one co-living unit, Diponegoro site (Semarang). Footprint 12 × 8.8 m, two storeys. You get the ground-floor unit at the northeast corner. Entry from east corridor.
+Kamu remote dari WIB, tim di Jakarta. Semua koordinasi lewat Slack, Trello, Zoom, dan email. Hari ini kamu menerima satu paket kerja yang mencakup dua proyek aktif:
 
-Program:
-- Bedroom: 3.6 × 3.2 m clear. Queen bed (1.6 × 2.0), bedside tables both sides, wardrobe 1.2 m wide full height.
-- Wet area: 2.4 × 1.8 m clear. Shower, wall-hung WC, vanity 600 mm. Floor waste centered.
-- No kitchenette. Communal pantry down the hall.
+Proyek 1 — Klien A (digital agency retainer):
+- Landing page klien A sedang revisi. Desainer (Rani) menunggu logo final dari klien — itu blocker.
+- Kemarin ada weekly sync dengan klien A. Transkripnya terlampir di halaman Materials.
+- Kamu harus mengubah transkrip itu menjadi meeting notes rapi.
 
-Budget for fit-out (joinery, tiling, sanitary, lighting): AUD 8,500 equivalent. Do not exceed.
+Proyek 2 — Klien B (webinar):
+- "Digital Workflow 101", 100 peserta, 4 minggu dari sekarang.
+- Kamu menyusun timeline lengkap (5 fase) dan Risk Log minimal 3 risiko.
+- Semua angka ada di spreadsheet master proyek — cek ulang, ada kejanggalan.
 
-References: Ganding Classic House bathroom palette (warm neutrals, terrazzo floor), Woman Gym 2025 joinery detailing (ply + HPL, shadow gap). Client chose: 600×600 mm matte porcelain floor, 300×600 mm wall tile to 2.1 m, ceiling white.
+Di luar itu:
+- Manajermu minta update harian pakai format standar agensi.
+- Papan Trello harus mencerminkan status terbaru.
 
-Decided:
-- Floor finish, wall tile, ceiling height (2.7 m), door swing (bedroom into room, wet area out).
-- Wardrobe internal layout: hanging left, shelves right, drawers bottom.
-- Vanity: wall-hung, single bowl, mirror cabinet above.
+Yang sudah diputuskan:
+- Platform: Zoom Webinar.
+- Anggaran promosi total: Rp 8.500.000.
+- Konten materi harus lengkap paling lambat tanggal 20; launching tanggal 30.
 
-Undecided / you resolve:
-- Shower screen: frameless pivot vs. fixed panel + walk-in. Pick one, justify in 1 line.
-- Lighting: recessed downlights only, or add LED strip under wardrobe / vanity. Max 4 circuits.
-- Power outlet locations: AS/NZS 3000 compliance. You place.
+Yang kamu putuskan sendiri:
+- Siapa PIC tiap task dan kapan deadline-nya (berdasarkan kebiasaan tim di transkrip).
+- Risiko mana yang masuk Risk Log dan apa rencana cadangannya.
+- Apa yang dilaporkan ke manajer hari ini — ringkas saja.
 
-As-built has two dimensional errors. Find them. Flag in submit.
+Spreadsheet master punya dua kesalahan data. Temukan, lalu laporkan saat submit.
 
-Deliverables list follows. 60 minutes total. No extensions.
+Daftar deliverables menyusul. Total 60 menit. Tanpa perpanjangan.
 
-— Project Manager
-Axel & Wright Architects
-Melbourne | AEDT`,
+— S. Chen, Project Manager
+Terra Digital Agency
+Jakarta | WIB`,
 };
 
 export const inputMaterials = {
-  sketchDescription: `Rough hand sketch (photo attached conceptually). Shows:
-- Unit outline 10.6 m × 7.0 m (internal). Note: does not match 12 × 8.8 footprint.
-- Bedroom 3.6 × 3.2 m at NE corner.
-- Wet area 2.4 × 1.8 m adjacent south.
-- Corridor 1.2 m wide along west edge.
-- Window shown on north wall (1.8 m wide, 1.2 m high, sill 900).
-- Door from corridor into bedroom (820 wide). Door from bedroom into wet area (720 wide, swing into bedroom).
-- No dimensions on corridor length. No column grid shown.`,
+  sketchDescription: `Transkrip Weekly Sync Klien A (kemarin, 14.00 WIB, 30 menit):
+
+Klien: "Kami mau launching tanggal 30. Bisa?"
+Desainer: "Bisa kalau materi dari kalian masuk paling lambat tanggal 20."
+Klien: "Oke, tapi kami mau tambah halaman 'Tentang Kami'."
+Manajer: "Itu di luar scope awal, nanti kami kirim estimasi biaya tambahan."
+Klien: "Logo final menyusul ya, mungkin besok."
+
+Catatan dari manajer setelah meeting:
+- "Launching 30 itu fix. Materi tanggal 20 itu syarat dari desainer, bukan selera kami."
+- "Halaman 'Tentang Kami' belum disetujui — jangan janji apa pun ke klien."
+- "Action item tanpa nama dan tanggal tidak berguna. Kalau kamu tulis 'kirim materi' tanpa PIC, itu bukan action item."`,
   sitePhotos: [
-    "East facade: 3-storey brick, regular window rhythm. Unit window aligns with grid.",
-    "Corridor view: existing fire hose reel at 1.8 m from NE corner, projects 120 mm into corridor.",
-    "Ceiling slab: exposed concrete, services run below. Downstand beam 300 deep along grid line 3 (3.6 m from north wall).",
+    "Slack #klien-a (08.41): Rani — \"Revisi landing page klien A masih nunggu logo final dari klien. Kalau logo gak masuk hari ini, revisi mundur ke minggu depan.\"",
+    "Slack DM manajer (08.55): \"Timeline webinar klien B kukes-kan hari ini juga ya, harus sudah saya review sebelum weekly sync besok. Pakai template timeline agensi + tab Risk Log.\"",
+    "Email klien A (09.05): \"Revisi desain landing page belum kami terima, kapan ya?\" — belum ada balasan dari tim. Kamu catat sebagai prioritas hari ini.",
   ],
   asBuilt: {
-    title: "As-Built Survey — Diponegoro Co-Living Ground Floor NE Unit",
-    scale: "1:50",
-    paper: "A3",
-    notes: "Surveyed 12/03/2024. All dims internal face of wall. Verify on site.",
+    title: "Spreadsheet Master Proyek — Klien B (Webinar \"Digital Workflow 101\")",
+    scale: "Revisi 3",
+    paper: "Google Sheets",
+    notes: "Terakhir diupdate Jumat lalu oleh Ops. Angka dipakai lintas tim — verifikasi sebelum dipakai.",
     dimensions: {
-      unitWidth: "10600",
-      unitDepth: "7000",
-      bedroomWidth: "3600",
-      bedroomDepth: "3200",
-      wetAreaWidth: "2400",
-      wetAreaDepth: "1800",
-      corridorWidth: "1200",
-      northWallWindow: "1800 wide × 1200 high, sill 900",
-      bedroomDoor: "820 clear, from corridor",
-      wetAreaDoor: "720 clear, swing into bedroom",
-      columnGrid: "Columns at 0, 3600, 7200, 10800 from north wall. 300×300.",
-      downstandBeam: "Along grid line 3 (10800 from north), 300 deep, 400 wide.",
+      budget: "Rp 8.500.000 (promosi) — rincian: iklan 6.500.000 + boosting 2.700.000",
+      participants: "100 (kapasitas platform maksimal 500)",
+      duration: "4 minggu — launching tanggal 30",
+      platform: "Zoom Webinar",
+      speakers: "3 pembicara (2 internal, 1 eksternal, 1 pembicara cadangan)",
+      promo: "Mulai minggu ke-2, 21 hari penuh",
+      target: "350 pendaftar → 100 hadir",
+      leads: "1.200 kontak email (dari webinar sebelumnya)",
     },
     errors: [
       {
         id: 1,
-        location: "Unit overall dimensions vs. column grid",
-        given: "Unit width 10600, columns at 0/3600/7200/10800",
-        issue: "Last column at 10800 exceeds unit width 10600 by 200 mm. Column sits outside unit boundary.",
-        correct: "Unit width should be 10800 to align with column grid, or last column at 10600.",
+        location: "Deadline materi vs. tanggal launching",
+        given: "Sheet progress menulis \"materi lengkap: minggu ke-3 (tanggal 30)\".",
+        issue: "Transkrip weekly sync memutuskan materi paling lambat tanggal 20 dan launching tanggal 30. Kalau materi baru 30, tidak ada waktu produksi dan promosi jalan tanpa bahan.",
+        correct: "Deadline materi harus tanggal 20 (minggu ke-2). Baris di sheet salah tulis minggu/dates.",
       },
       {
         id: 2,
-        location: "Fire hose reel vs. bedroom door swing",
-        given: "Corridor 1200 wide. Fire hose reel at 1800 from NE corner, projects 120 mm. Bedroom door 820 clear at corridor.",
-        issue: "Hose reel encroaches 120 mm into 1200 corridor. Bedroom door at 820 clear needs ~900 mm swing. Effective corridor 1080 mm. Door swing obstructed.",
-        correct: "Recess hose reel 150 mm into wall or relocate door. Fire engineer sign-off required.",
+        location: "Ringkasan budget vs. rincian item",
+        given: "Sel ringkasan: Rp 8.500.000. Rincian: iklan Rp 6.500.000 + boosting Rp 2.700.000.",
+        issue: "Rincian berjumlah Rp 9.200.000 — Rp 700.000 lebih besar dari ringkasan. Kalau dipakai untuk approval, budget langsung meleset.",
+        correct: "Ringkasan harus Rp 9.200.000 (approval baru), atau rincian dipangkas Rp 700.000. Salah satu harus dikoreksi dan dikonfirmasi ke manajer.",
       },
     ],
   },
   answerKey: {
-    error1: "Unit width 10600 vs column at 10800 — 200 mm mismatch. Column grid implies 10800 module.",
-    error2: "Fire hose reel at 1800 from NE corner projects 120 into 1200 corridor. Bedroom door swing (820 clear) obstructed.",
+    error1: "Deadline materi di sheet tertulis minggu ke-3 (tanggal 30), padahal keputusan meeting: materi paling lambat tanggal 20, launching tetap 30.",
+    error2: "Rincian budget promosi berjumlah Rp 9.200.000, tidak cocok dengan ringkasan Rp 8.500.000 — selisih Rp 700.000.",
   },
 };
 
 export const deliverables = [
   {
     id: 1,
-    name: "Dimensioned Plan + RCP",
-    description: "Ground floor unit plan 1:50 with dimensions, annotations, door/window tags. Reflected ceiling plan 1:50 showing downlights, strip lighting, beam, diffuser locations.",
-    format: ".dwg (AutoCAD 2018) + .pdf",
-    scale: "1:50",
-    fileName: "AW-2026-047_plan-rcp_v1",
+    name: "Meeting Notes — Weekly Sync Klien A",
+    description: "Ubah transkrip mentah menjadi meeting notes dengan format agensi: keputusan, action items, risiko/catatan. Satu halaman, mudah dipindai.",
+    format: "Diisi langsung di form Submit (format agensi)",
+    scale: "N/A",
+    fileName: "TDA-2026-012_notes-klienA_v1",
     suggestedTime: 25,
     checklist: [
-      "All internal dims to face of finish",
-      "Door/window schedule tags",
-      "RCP: 4 circuits max, beam shown dashed",
-      "Fire hose reel noted on plan",
-      "Column grid aligned (10800)",
-      "Layer naming: A-PLAN, A-RCP, A-DIMS, A-TEXT",
+      "Keputusan ditulis eksplisit (target launching, syarat materi)",
+      "Tiap action item punya: siapa, tugas apa, deadline kapan",
+      "Halaman 'Tentang Kami' ditandai sebagai change request (di luar scope)",
+      "Logo final dicatat sebagai item klien dengan batas waktu",
+      "Risiko dicatat: materi telat dari tanggal 20 → launching mundur",
+      "Ringkas — tidak menyalin transkrip mentah",
     ],
   },
   {
     id: 2,
-    name: "Two Interior Elevations",
-    description: "Bedroom north elevation (window, wardrobe). Wet area west elevation (vanity, shower, WC, tile layout). 1:50.",
-    format: ".dwg + .pdf",
-    scale: "1:50",
-    fileName: "AW-2026-047_elevations_v1",
+    name: "Timeline Proyek Webinar + Risk Log",
+    description: "Timeline klien B di Sheets/Notion: Fase, Task, PIC, Mulai, Deadline, Status, Catatan. Lima fase: Perencanaan, Persiapan, Promosi, Eksekusi, Evaluasi. Plus tab Risk Log minimal 3 risiko.",
+    format: "Diisi langsung di form Submit (tabel timeline + risk log)",
+    scale: "N/A",
+    fileName: "TDA-2026-012_timeline-klienB_v1",
     suggestedTime: 15,
     checklist: [
-      "Finished floor level (FFL) datum",
-      "Tile set-out: 600×600 floor, 300×600 wall to 2100",
-      "Wardrobe internal elevations (hanging/shelves/drawers)",
-      "Vanity + mirror cabinet",
-      "Shower screen type noted",
-      "Height dimensions: FFL to ceiling 2700",
+      "5 fase lengkap, urut dari perencanaan sampai evaluasi",
+      "Tiap task punya PIC dan tanggal mulai/deadline",
+      "Deadline materi = tanggal 20 (sesuai keputusan meeting, bukan sheet yang salah)",
+      "Risk log ≥ 3 risiko (mis. pembicara batal, pendaftar sedikit, platform error)",
+      "Tiap risiko: dampak + rencana cadangan",
+      "Kesalahan budget di spreadsheet dikoreksi atau ditandai",
     ],
   },
   {
     id: 3,
-    name: "Perspective Render",
-    description: "One interior view: bedroom looking toward wet area door. Show material palette, lighting, joinery. 1920×1080, 300 dpi.",
-    format: ".jpg (sRGB, 85% quality)",
-    scale: "N/A",
-    fileName: "AW-2026-047_render_v1",
-    suggestedTime: 10,
-    checklist: [
-      "Camera: eye level 1600, 24mm equiv.",
-      "Materials: porcelain, terrazzo, ply/HPL, matte white",
-      "Lighting: 4× downlight + LED strip under wardrobe",
-      "No people, no entourage",
-      "Watermark: none (studio adds)",
-    ],
-  },
-  {
-    id: 4,
-    name: "Cover Email + QA Checklist",
-    description: "Email to PM (max 120 words). Assumptions list. As-built errors found. QA checkboxes.",
-    format: "Text entry in submit form",
+    name: "Update Harian untuk Manajer",
+    description: "Laporan singkat format standar: Selesai / Sedang jalan / Blocker (butuh bantuan apa) / Besok. Mudah dipindai dalam 30 detik.",
+    format: "Diisi langsung di form Submit (4 bagian)",
     scale: "N/A",
     fileName: "N/A",
     suggestedTime: 10,
     checklist: [
-      "Email ≤ 120 words, professional tone",
-      "Assumptions: bullet list, max 6 items",
-      "As-built errors: both identified with location + impact",
-      "QA: all 12 checkboxes honest",
-      "File naming convention followed",
-      "No corrupt files",
+      "Empat bagian: Selesai, Sedang jalan, Blocker, Besok",
+      "Blocker menyebut blocker logo klien A dan siapa yang dibutuhkan",
+      "Angka konkret (jumlah task selesai, tanggal, nama)",
+      "Tidak bertele-tele — maksimal ±80 kata",
+      "Change request klien A disebut statusnya (menunggu keputusan)",
+      "Jujur: yang belum selesai tetap dilaporkan",
+    ],
+  },
+  {
+    id: 4,
+    name: "Email Ringkasan + QA Checklist",
+    description: "Email ke manajer (maks 120 kata): apa yang dikirim, keputusan kunci, kesalahan data yang ditemukan, apa yang menunggu keputusan. Plus QA checkboxes jujur.",
+    format: "Teks di submit form",
+    scale: "N/A",
+    fileName: "N/A",
+    suggestedTime: 10,
+    checklist: [
+      "Email ≤ 120 kata, tone profesional",
+      "Menyebut 3 deliverables utama dan statusnya",
+      "Dua kesalahan data dilaporkan dengan lokasi + dampak",
+      "Change request 'Tentang Kami' — status menunggu estimasi biaya",
+      "QA: semua 12 checkbox diisi jujur",
+      "Naming file sesuai konvensi",
     ],
   },
 ];
 
 export const disruption = {
   timestamp: 25,
-  from: "Client (via PM forward)",
-  subject: "Re: AW-2026-047 — quick thought",
-  body: `Hi Sandy,
+  from: "Klien A (via PM)",
+  subject: "Re: TDA-2026-012 — nanya lagi dong",
+  body: `Halo,
 
-Just looked at the floor plan sketch Nuha sent over (I assume that's what the attachment was). Couple of things — my wife and I were talking last night and we really think the bedroom needs a small desk nook. Even just 600 deep by 1200 wide tucked near the window. People work from home now, right? And while we're at it, the wet area feels a bit tight. Can we push the wall south 300? The corridor can take it, it's 1200 wide anyway. Also, budget — we need to trim 15% off the fit-out number. The numbers are getting away from us. Let me know if any of this is a problem. We trust your judgment but these are important to us.
+Kami mikir lagi soal website. Bisa tolong tambah satu halaman "Tentang Kami" di sprint yang sekarang? Kan desainer lagi pegang revisi landing page, sekalian aja. Dan tolong pastiin ya, launching tetep tanggal 30 kan? Kami udah janji ke bos kami soal tanggal itu.
 
-Thanks,
-[Client Name]
-Sent from my iPhone`,
-  pmNote: `Nuha — client request forwarded. You have 5 minutes to reply to me (not client) with: accept / reject / counter. One sentence each option. Then keep working. Clock doesn't stop.
+Oh iya, budget promosi webinar itu bisa dicairin minggu ini? Kami mau langsung jalan iklannya.
+
+Terima kasih,
+[Klien A]
+Dikirim dari iPhone saya`,
+  pmNote: `Kamu — klien lewat chat lagi. Punya 5 menit balas ke aku (bukan klien): accept / reject / counter. Satu kalimat tiap opsi. Ingat: "Tentang Kami" itu change request di luar scope, dan tanggal 30 bergantung materi masuk tanggal 20. Jam jalan terus.
 
 — S.`,
 };
 
 export const submitForm = {
   qaCheckboxes: [
-    "All deliverables use correct file naming convention (AW-2026-047_[name]_v#)",
-    "Plan + RCP: dimensions to face of finish, column grid aligned (10800), fire hose reel noted",
-    "Elevations: FFL datum, tile set-out, wardrobe/vanity internals, shower screen type noted",
-    "Render: 1920×1080, correct materials, lighting per decision, no entourage",
-    "Email to PM: ≤ 120 words, professional, references assumptions + errors",
-    "Assumptions list: max 6 bullets, covers shower screen, lighting, outlets, beam, hose reel, tile",
-    "As-built errors: both identified with location, given dims, correct dims, impact",
-    "No corrupt files, all openable, correct formats (.dwg 2018, .pdf, .jpg)",
-    "Time remaining at submit: recorded",
-    "Revision rounds tracked: 0 (first delivery)",
-    "Portfolio rights clause noted — no portfolio use without written consent",
-    "Net 45 payment term accepted — first payment ~60+ days after invoice",
+    "Semua dokumen memakai naming convention TDA-2026-012_[nama-dok]_v#",
+    "Meeting notes: keputusan, action items (siapa + tugas + deadline), dan risiko tercantum lengkap",
+    "Meeting notes: halaman 'Tentang Kami' ditandai sebagai change request di luar scope",
+    "Timeline: 5 fase lengkap (Perencanaan → Persiapan → Promosi → Eksekusi → Evaluasi) dengan PIC dan tanggal",
+    "Risk log: minimal 3 risiko, tiap risiko punya dampak dan rencana cadangan",
+    "Timeline memakai deadline materi tanggal 20 (sesuai keputusan meeting, bukan sheet yang salah)",
+    "Update harian: format Selesai / Sedang jalan / Blocker / Besok, angka konkret",
+    "Dua kesalahan data spreadsheet ditemukan dan dilaporkan dengan lokasi + dampak",
+    "Email ringkasan ≤ 120 kata, profesional, menyebut status semua deliverables",
+    "Tidak ada dokumen korup / placeholder / bagian kosong",
+    "Status board (Trello) diperbarui sesuai data terbaru hari ini",
+    "Klausul kontrak yang bermasalah sudah dicatat di notes accept",
   ],
 };
 
 export const results = {
   seniorArchitectFeedback: [
     {
-      item: "Dimensioned Plan + RCP",
-      verdict: "Partially correct",
-      markup: [
-        "Column grid fixed to 10800 — good catch on Error 1. But you didn't adjust bedroom/wet area dims to suit. Bedroom still 3600 wide, now 200 short of grid. Should be 3600/3600/3600 or note non-alignment.",
-        "Fire hose reel noted on plan — correct. But no recess detail. Door swing still clashes. Need 200 mm recess or door relocation.",
-        "RCP: 4 circuits OK. Beam shown dashed — good. Missing: emergency light location per NCC. Required in corridor.",
-        "Layer naming clean. Title block missing project code.",
-      ],
-    },
-    {
-      item: "Interior Elevations",
+      item: "Meeting Notes — Klien A",
       verdict: "Correct with omissions",
       markup: [
-        "Bedroom north: wardrobe internal elevation missing. Only front face shown. Client asked for hanging/shelves/drawers — show internals.",
-        "Wet area west: tile set-out correct. Shower screen noted as 'frameless pivot' — OK. But no floor waste location on elevation. Critical for fall.",
-        "Vanity: mirror cabinet height not dimensioned. Standard 1800 above FFL? State it.",
+        "Keputusan kunci tertulis: launching 30, materi paling lambat 20 — benar.",
+        "Action item 'kirim materi konten' diberi PIC (Klien) dan deadline (20) — benar. Tapi 'kirim logo final' tidak diberi tanggal konkret, cuma 'besok'. Tulis tanggalnya.",
+        "Halaman 'Tentang Kami' hanya disebut di bawah, tidak ditandai jelas sebagai change request yang menunggu estimasi biaya. Ini item yang paling sering bikin scope melebar.",
       ],
     },
     {
-      item: "Perspective Render",
+      item: "Timeline + Risk Log",
+      verdict: "Partially correct",
+      markup: [
+        "5 fase lengkap, PIC terisi. Bagus.",
+        "Deadline materi masih mengikuti sheet yang salah (minggu ke-3) di satu baris — kamu menemukan error-nya tapi tidak memperbaiki timeline-nya. Inkonsisten.",
+        "Risk log: 3 risiko cukup, tapi 'pembicara batal' tidak punya rencana cadangan konkret (nama pengganti / shift topik). 'Rencana: cari pengganti' bukan rencana.",
+      ],
+    },
+    {
+      item: "Update Harian",
       verdict: "Acceptable",
       markup: [
-        "Materials match palette. Lighting shows 4 downlights + strip — matches your decision. Good.",
-        "Camera angle shows wet area door swing — clever. But render shows pivot screen closed. Open position would clarify clearance.",
-        "Resolution and format correct. No watermark — correct.",
+        "Format 4 bagian diikuti. Blocker (logo klien A) disebut dengan pihak yang dibutuhkan — ini yang bikin manajer bisa bertindak.",
+        "Angka konkret ada: 2 task selesai, 1 change request menunggu keputusan.",
+        "Bagian 'Besok' actionable: kirim revisi, mulai fase development.",
       ],
     },
     {
-      item: "Cover Email",
+      item: "Email Ringkasan",
       verdict: "Concise but missing key flag",
       markup: [
-        "Word count 98 — under limit. Tone professional. References assumptions and errors — good.",
-        "Did not flag: Net 45 payment term will delay your cash flow. Client budget cut 15% not addressed. You accepted disruption counter but email doesn't confirm scope change.",
-        "Assumptions list: 5 items. Missing: tile grout width (3 mm assumed), shower screen hardware finish (matte black assumed).",
+        "Word count 96 — di bawah batas. Tone profesional. Struktur jelas.",
+        "Tidak menyebut: klausul respons 15 menit/07.00–22.00 di kontrak — itu beban terbesar minggu percobaan dan layak dikonfirmasi ulang sebelum minggu kedua.",
+        "Kesalahan budget hanya disebut 'ada selisih' tanpa angka. Sebut angkanya: Rp 700.000.",
       ],
     },
     {
-      item: "As-Built Errors",
+      item: "Kesalahan Data Spreadsheet",
       verdict: "Both found",
       markup: [
-        "Error 1 (column grid): correctly identified 200 mm mismatch. Proposed fix: extend unit to 10800. Acceptable.",
-        "Error 2 (hose reel): correctly identified obstruction. Proposed fix: recess hose reel 150 mm into wall. Acceptable — but needs fire engineer sign-off. You didn't mention.",
+        "Error 1 (deadline materi): benar menemukan kontradiksi dengan transkrip, dan dampaknya dijelaskan.",
+        "Error 2 (budget): benar menghitung selisih Rp 700.000. Saran koreksinya masuk akal, tapi kamu tidak menyebut siapa yang harus memutuskan (ops atau manajer) — sebut PIC-nya.",
       ],
     },
   ],
-  pmComment: `Email: clear, under word limit. Good you flagged assumptions. Disruption reply: you countered (desk nook = scope creep, budget cut = reject, wall move = conditional on fire hose). Correct call. But you didn't confirm revised deliverable list in email. Next time, one line: 'Deliverables unchanged per original brief.'`,
+  pmComment: `Email: jelas, di bawah batas kata, bagus kamu melaporkan asumsi. Balasan disruption: kamu counter — "Tentang Kami" masuk estimasi biaya dulu, launching tetap 30 asal materi masuk 20. Keputusan tepat. Tapi kamu tidak mengonfirmasi ulang daftar deliverables di email. Lain kali satu baris: "Scope deliverables tidak berubah dari brief."`,
   contractEvaluation: {
     caughtClauses: [
       {
-        clause: "Revisions until client approval",
+        clause: "Scope berubah tanpa perubahan biaya",
         caught: true,
-        note: "Noted as 'unlimited revision risk' in assumptions. Should have proposed cap: 3 rounds included, then AUD 75/hr.",
+        note: "Ditandai sebagai 'scope creep' di notes accept. Seharusnya langsung usulkan: permintaan tambahan lewat change request dengan estimasi biaya.",
       },
       {
-        clause: "Net 45 payment",
+        clause: "Respons 15 menit, 07.00–22.00, 7 hari",
         caught: true,
-        note: "Flagged in assumptions. Should have asked for 50% deposit or Net 14.",
+        note: "Ditulis di assumptions. Seharusnya diusulkan jam respons realistis di hari kerja (mis. 09.00–18.00 WIB, maks 1 jam) dan on-call dijadwalkan terpisah.",
       },
       {
-        clause: "Portfolio rights restricted",
+        clause: "Honor Net 45 setelah 'persetujuan manajer'",
         caught: false,
-        note: "Missed entirely. No note written. This clause means you cannot show this work to future clients without studio permission — weakens your pipeline.",
+        note: "Tidak sama sekali. Tidak ada catatan. Klausul ini membuat bayaranmu bergantung pada orang yang sama dengan yang menilai kerjamu — risiko besar di minggu percobaan.",
       },
     ],
     recommendedNotes: [
-      "Clause 1: 'Revision rounds capped at 3 included. Additional at AUD 75/hr.'",
-      "Clause 2: 'Request Net 14 or 50% deposit on acceptance.'",
-      "Clause 3: 'Portfolio rights: static images + drawings + process OK for self-promotion with project anonymization.'",
+      "Klausul 1: 'Permintaan di luar scope ditangani via change request dengan estimasi biaya sebelum pengerjaan.'",
+      "Klausul 2: 'Jam respons: 09.00–18.00 WIB hari kerja, maksimal 1 jam. Respons di luar jam itu best-effort.'",
+      "Klausul 3: 'Honor dibayarkan Net 14 setelah invoice; invoice dianggap disetujui jika tidak ada keberatan dalam 3 hari kerja.'",
     ],
   },
   rubric: [
     {
       criteria: "Contract Reading",
-      weight: 20,
-      indicators: [
-        "Identified all 3 problematic clauses",
-        "Wrote specific counter-notes for each",
-        "Understood deadline trigger (Accept = clock start)",
-        "Noted jurisdiction / tax obligation",
-      ],
-      pass: "2+ clauses caught with actionable notes",
-    },
-    {
-      criteria: "As-Built Error Detection",
-      weight: 20,
-      indicators: [
-        "Found Error 1 (column grid 200 mm mismatch)",
-        "Found Error 2 (fire hose reel blocks door swing)",
-        "Stated correct dimensions",
-        "Described impact on design",
-      ],
-      pass: "Both errors found with correct dims + impact",
-    },
-    {
-      criteria: "Drawing Accuracy",
-      weight: 25,
-      indicators: [
-        "Plan dims to face of finish",
-        "Column grid aligned (10800)",
-        "Fire hose recess or door relocation shown",
-        "RCP: 4 circuits, beam dashed, emergency light",
-        "Elevations: FFL datum, tile set-out, internals",
-        "Title block with project code",
-      ],
-      pass: "5/6 indicators met",
-    },
-    {
-      criteria: "Visual Quality",
       weight: 15,
       indicators: [
-        "Render 1920×1080, correct materials",
-        "Lighting matches decision (4 downlights + strip)",
-        "Camera shows design intent",
-        "No entourage, no watermark",
+        "Menemukan 3 klausul bermasalah",
+        "Menulis catatan counter yang spesifik untuk tiap klausul",
+        "Paham pemicu deadline (Accept = jam mulai)",
+        "Mencatat kewajiban pajak/status kerja",
       ],
-      pass: "All 4 met",
+      pass: "2+ klausul tertangkap dengan catatan yang bisa dipakai",
+    },
+    {
+      criteria: "Data Accuracy",
+      weight: 20,
+      indicators: [
+        "Menemukan Error 1 (deadline materi vs launching)",
+        "Menemukan Error 2 (budget ringkasan vs rincian, selisih Rp 700.000)",
+        "Menyebut dampak tiap kesalahan",
+        "Timeline memakai data yang benar (materi tanggal 20)",
+      ],
+      pass: "Dua error ditemukan dengan lokasi + dampak",
+    },
+    {
+      criteria: "Meeting Notes Quality",
+      weight: 15,
+      indicators: [
+        "Keputusan eksplisit dan benar",
+        "Semua action item: siapa + tugas + tanggal",
+        "Change request ditandai jelas",
+        "Ringkas, tidak menyalin transkrip",
+      ],
+      pass: "4/4 indikator terpenuhi",
+    },
+    {
+      criteria: "Timeline & Risk",
+      weight: 20,
+      indicators: [
+        "5 fase lengkap dan urut",
+        "Tiap task punya PIC dan tanggal",
+        "Risk log ≥ 3 dengan dampak + rencana cadangan konkret",
+        "Kolom sesuai template (Fase/Task/PIC/Mulai/Deadline/Status/Catatan)",
+      ],
+      pass: "5/6 indikator terpenuhi",
     },
     {
       criteria: "Communication",
-      weight: 10,
+      weight: 15,
       indicators: [
-        "Email ≤ 120 words, professional",
-        "Disruption reply: clear accept/reject/counter to PM",
-        "Assumptions list ≤ 6, covers key unknowns",
-        "Tone: business English (EOD, ASAP, FYI)",
+        "Email ≤ 120 kata, profesional",
+        "Balasan disruption: accept/reject/counter yang jelas ke PM",
+        "Update harian format 4 bagian, mudah dipindai",
+        "Tone komunikasi tertulis jelas dan singkat",
       ],
-      pass: "3/4 met",
+      pass: "3/4 terpenuhi",
     },
     {
       criteria: "Time Management",
-      weight: 10,
+      weight: 15,
       indicators: [
-        "Submitted within 60 minutes",
-        "Early submit + quality = bonus",
-        "Time tracked per deliverable",
-        "No panic at disruption (min 25)",
+        "Submit dalam 60 menit",
+        "Submit lebih awal + kualitas lolos = bonus",
+        "Waktu per deliverable terlacak",
+        "Tidak panik saat disruption (menit 25)",
       ],
-      pass: "Submit ≤ 60 min, quality pass",
+      pass: "Submit ≤ 60 menit, kualitas lolos",
     },
   ],
   emailExamples: {
-    pass: `Subject: AW-2026-047 — Deliverables v1
+    pass: `Subject: TDA-2026-012 — Deliverables hari ini
 
-Sandy,
+Bu Sari,
 
-Attached: plan+RCP, 2 elevations, render per brief. 
-Assumptions: (1) shower frameless pivot, (2) 4 downlights + LED strip under wardrobe, (3) outlets per AS/NZS 3000, (4) tile grout 3 mm, (5) shower hardware matte black, (6) hose reel recessed 150 mm.
-As-built errors flagged: (1) column grid 200 mm short — extended to 10800, (2) hose reel obstructs bedroom door — recess proposed.
-All files named AW-2026-047_[name]_v1. Ready for mark-up.
+Terkirim: (1) meeting notes klien A — launching 30, materi paling lambat 20, "Tentang Kami" ditandai change request; (2) timeline webinar klien B, 5 fase + risk log 3 risiko; (3) update harian.
+Ditemukan di spreadsheet master: deadline materi tertulis 30 (seharusnya 20), dan rincian budget promosi Rp 9.200.000 vs ringkasan Rp 8.500.000 (selisih Rp 700.000). Mohon keputusan koreksinya.
+Menunggu: logo final dari klien A (blocker revisi landing page).
 
-— Nuha`,
+— Kamu (Koordinator)`,
     fail: `Subject: Done
 
 Hi,
 
-Files attached. I did the drawings and render. The as-built had some issues but I fixed them. Let me know if you need changes.
+Semua file terlampir. Notes sudah dibikin, timeline juga. Ada beberapa angka yang aneh di spreadsheet tapi udah aku rapikan sendiri.
 
-Thanks,
-Nuha`,
-    failReason: "No project code, no assumptions, no error log, no file naming, casual tone, under-delivered.",
+Thanks`,
+    failReason: "Tanpa nomor proyek, tanpa rincian keputusan, kesalahan data tidak dilaporkan justru 'dirapikan diam-diam' (bahaya), tanpa PIC/deadline, tone asal.",
   },
   decisionThresholds: {
-    offered: "Total score ≥ 70/100 AND all pass thresholds met",
-    notMovingForward: "Total score < 70 OR any critical fail (contract: 0 clauses caught, errors: 0 found, time: late)",
+    offered: "Total skor ≥ 70/100 DAN semua pass threshold terpenuhi",
+    notMovingForward: "Total skor < 70 ATAU ada critical fail (kontrak: 0 klausul tertangkap, data: 0 error ditemukan, waktu: telat)",
   },
 };
 
 export const credentials = {
-  name: "Remote Architectural Designer — Simulated Project Practice",
-  description: "Bukti latihan simulasi yang dinilai berdasarkan rubrik, bukan sertifikasi profesi resmi dan bukan pengalaman kerja di studio sungguhan.",
-  projectCode: "AW-2026-047",
+  name: "Junior Project Coordinator — Simulated Project Practice",
+  description: "Bukti latihan simulasi yang dinilai berdasarkan rubrik, bukan sertifikasi profesi resmi dan bukan pengalaman kerja di perusahaan sungguhan.",
+  projectCode: "TDA-2026-012",
   passingScore: 70,
   noCriteriaBelow: 50,
   levels: [
     { key: "completed", name: "Completed", minScore: 70, desc: "Semua kriteria ≥ 50, total ≥ 70. Dasar solid." },
-    { key: "proficient", name: "Proficient", minScore: 85, desc: "Kontrak & error detection ≥ 80, visual ≥ 80. Siap proyek nyata." },
-    { key: "distinction", name: "Distinction", minScore: 95, desc: "Total ≥ 95, tidak ada kriteria < 80. Level junior studio." },
+    { key: "proficient", name: "Proficient", minScore: 85, desc: "Kontrak & deteksi data ≥ 80, dokumen ≥ 80. Siap kerja nyata." },
+    { key: "distinction", name: "Distinction", minScore: 95, desc: "Total ≥ 95, tidak ada kriteria < 80. Level junior koordinator siap hire." },
   ],
   skillsProven: [
     "contract review",
-    "as-built verification",
-    "1:50 working drawings",
-    "interior perspective rendering",
+    "meeting notes",
+    "project timeline",
+    "risk log",
+    "daily reporting",
     "professional email in English",
     "time management",
   ],
@@ -486,19 +490,19 @@ export const credentials = {
     recipientName: "Alexandra Chen",
     level: "Proficient",
     issuedDate: "2026-11-17",
-    verificationId: "RWT-2026-047-PRF-8K9L",
-    scores: { contract: 85, errors: 90, drawings: 88, visual: 85, comms: 92, time: 100 },
+    verificationId: "RWT-2026-012-PRF-8K9L",
+    scores: { contract: 85, data: 90, notes: 88, timeline: 85, comms: 92, time: 100 },
   },
   privacyOptions: [
     { key: "minimal", label: "Level & Skills only", desc: "Hanya level dan daftar skill yang terlihat publik" },
     { key: "full", label: "Level, Skills & Scores", desc: "Level, skill, dan skor per kriteria terlihat publik" },
   ],
   linkedInFields: {
-    name: "Remote Architectural Designer — Simulated Project Practice",
+    name: "Junior Project Coordinator — Simulated Project Practice",
     issuer: "Remote Work Training Platform",
     issueDate: "2026-11",
-    credentialId: "RWT-2026-047-PRF-8K9L",
-    credentialUrl: "https://r2studio.web.id/verify/RWT-2026-047-PRF-8K9L",
+    credentialId: "RWT-2026-012-PRF-8K9L",
+    credentialUrl: "https://r2studio.web.id/verify/RWT-2026-012-PRF-8K9L",
   },
 };
 
@@ -506,84 +510,84 @@ export const characters = [
   {
     initials: "SC",
     role: "Project Manager",
-    style: "Ringkas, deadline mendadak, informasi kadang kurang.",
-    sample: "Septi — client request forwarded. You have 5 minutes to reply to me (not client) with: accept / reject / counter. One sentence each option. Then keep working. Clock doesn't stop. — S.",
+    style: "Singkat, langsung ke tugas, mengandalkan update tertulis.",
+    sample: "Kamu — klien minta tambahan lagi. Cek scope dulu, balas ke aku dalam 5 menit: accept / reject / counter. Satu kalimat tiap opsi. Jam jalan terus. — S.",
   },
   {
-    initials: "MW",
-    role: "Senior Architect",
-    style: "Detail, keras, tidak suka alasan.",
-    sample: "Column grid fixed to 10800 — good catch on Error 1. But you didn't adjust bedroom/wet area dims to suit. Wardrobe internal elevation missing. Emergency light per NCC required in corridor. — M. Wright",
+    initials: "RP",
+    role: "Head of Delivery",
+    style: "Detail, menilai dari dokumen, tidak suka alasan.",
+    sample: "Action item 'kirim materi' tanpa nama dan tanggal bukan action item. Itu doa. Meeting notes kamu harus bisa dibaca orang yang tidak hadir meeting. — R. Prameswari",
   },
   {
-    initials: "CL",
-    role: "Client",
-    style: "Bertele-tele, bisa ganti arah.",
-    sample: "Hi Septi, my wife and I think the bedroom needs a small desk nook. 600 deep by 1200 wide near the window. Also wet area feels tight — can we push the wall south 300? The corridor can take it, it's 1200 wide anyway. Also, budget — we need to trim 15% off the fit-out number. The numbers are getting away from us. Let me know if any of this is a problem. We trust your judgment but these are important to us. Thanks! — [Client Name]",
+    initials: "KA",
+    role: "Klien (Klien A)",
+    style: "Ramai, sering mengubah kebutuhan, sensitif soal tanggal.",
+    sample: "Kami mau launching tanggal 30. Bisa? Oh iya, tambah halaman 'Tentang Kami' sekalian ya. Dan budget promosi bisa dicairkan minggu ini? Kami mau langsung jalan iklannya.",
   },
 ];
 
 export const introContent = {
-  pembuka: `Studio di Melbourne menawarimu satu pekerjaan: Co-Living Unit Fit-Out, Diponegoro Site, kode AW-2026-047. Kontraknya sudah dikirim. Kamu punyi 60 menit sejak menekan Start. Ini simulasi, tidak ada klien sungguhan, tapi diperlakukan seperti sungguhan.`,
-  situasinya: `Axel & Wright Architects, Melbourne — tim 8 arsitek, 3 interior designer. Fokus residential, co-living, small commercial. Komunikasi lewat Slack, Google Drive, email. Zona waktu Melbourne November memakai waktu musim panas (AEDT, UTC+11), selisih 4 jam dengan Pamekasan (WIB).`,
-  peran: `Remote Architectural Designer, project-based, satu pekerjaan. Diharapkan memproduksi gambar kerja unit co-living (plan, RCP, elevasi, render) dari as-built dan sketsa yang disediakan. Bekerja async, komunikasi tertulis bahasa Inggris, manajemen waktu mandiri. Output dikirim lewat platform, review oleh Senior Architect.`,
+  pembuka: `Agensi digital di Jakarta menawarimu posisi Junior Project Coordinator remote, minggu percobaan, kode TDA-2026-012. Paket kerja pertamamu sudah dikirim. Kamu punya 60 menit sejak menekan Start. Ini simulasi — tidak ada klien sungguhan, tapi diperlakukan seperti sungguhan.`,
+  situasinya: `Terra Digital Agency, Jakarta — tim remote 12 orang: desainer, developer, CS, ops. Klien utama: klien A (retainer website) dan klien B (webinar). Komunikasi lewat Slack, Trello, Zoom, email. Kamu bekerja dari WIB; sebagian korespondensi dengan klien memakai bahasa Inggris tertulis.`,
+  peran: `Junior Project Coordinator (remote, WIB). Memastikan proyek selesai sesuai scope, waktu, dan budget: memecah proyek jadi task, mengelola board, mencatat meeting, menagih progres, mengangkat blocker, menulis status report. Output dikirim lewat platform, review oleh manajer dan Head of Delivery.`,
   aturan: [
     "Timer 60 menit mulai saat tombol Start ditekan, bukan saat halaman dibuka.",
     "Timer tidak bisa dijeda.",
     "Boleh submit kapan saja sebelum waktu habis. Submit lebih cepat hanya dihitung plus kalau kualitasnya lolos.",
-    "Kalau waktu habis sebelum submit, kontrak yang menentukan konsekuensinya (void, no payment).",
+    "Kalau waktu habis sebelum submit, perjanjian yang menentukan konsekuensinya (batal, honor tidak dibayar).",
     "Setelah submit, tidak bisa diubah.",
-    "Sesi tidak bisa diulang dengan skenario yang sama. [Konfirmasi: boleh diulang? kredensial percobaan pertama tetap Berlaku?]",
-    "Tools yang boleh dipakai: SketchUp, D5 Render, Lumion, AutoCAD atau software gambar lain yang dikuasai, Word, Excel, Google Sheets. [Konfirmasi: boleh pakai AI, referensi internet, template pribadi?]",
-    "Kontrak dibaca dan diputuskan sendiri. Platform tidak akan memberi tahu mana yang benar.",
+    "Sesi bisa diulang, tapi kredensial dihitung dari percobaan yang diinginkan di sesi berikutnya.",
+    "Tools yang boleh dipakai: Google Docs/Sheets, Notion, Trello/Asana, kalkulator. Boleh pakai template pribadi.",
+    "Perjanjian dan bahan dibaca dan diputuskan sendiri. Platform tidak akan memberi tahu mana yang benar.",
   ],
   tahapan: [
-    { step: 1, name: "Contract", desc: "Baca kontrak penuh, temukan 2 klausul bermasalah, pilih Accept atau Accept with notes", time: "8 menit" },
-    { step: 2, name: "Brief", desc: "Baca pesan PM, paham program ruang, budget, yang sudah/blm diputuskan", time: "5 menit" },
-    { step: 3, name: "Materials", desc: "Cek sketsa, foto tapak, as-built — temukan 2 kesalahan dimensi", time: "5 menit" },
-    { step: 4, name: "Deliverables", desc: "Kerja inti: gambar plan+RCP (25'), 2 elevasi (15'), render (10')", time: "50 menit" },
+    { step: 1, name: "Contract", desc: "Baca perjanjian penuh, temukan 3 klausul bermasalah, pilih Accept atau Accept with notes", time: "8 menit" },
+    { step: 2, name: "Brief", desc: "Baca pesan manajer: dua proyek aktif, yang sudah/belum diputuskan", time: "5 menit" },
+    { step: 3, name: "Materials", desc: "Cek transkrip meeting, pesan Slack, spreadsheet master — temukan 2 kesalahan data", time: "5 menit" },
+    { step: 4, name: "Deliverables", desc: "Kerja inti: meeting notes (25'), timeline + risk log (15'), update harian (10')", time: "50 menit" },
     { step: 5, name: "Disruption", desc: "Satu pesan masuk ~menit ke-25 dari klien/PM, balas dalam 5 menit, lanjut kerja", time: "5 menit" },
-    { step: 6, name: "Submit", desc: "Upload file, email PM ≤120 kata, asumsi, error as-built, QA checklist", time: "7 menit" },
+    { step: 6, name: "Submit", desc: "Kumpulkan dokumen, email manajer ≤120 kata, temuan data, QA checklist", time: "7 menit" },
   ],
   dinilai: [
-    { key: "contract", label: "Baca Kontrak", desc: "Menemukan klausul bermasalah dan menulis catatan counter yang spesifik." },
-    { key: "errors", label: "Ketelitian Cek Bahan", desc: "Mendeteksi kedua kesalahan dimensi as-built dengan benar dan dampaknya." },
-    { key: "drawings", label: "Akurasi Gambar", desc: "Dimensi ke face of finish, grid kolom benar, detail lengkap, layer rapi." },
-    { key: "visual", label: "Kualitas Visual", desc: "Render 1920×1080, material & pencahayaan sesuai keputusan, kamera jelas." },
-    { key: "comms", label: "Komunikasi Tertulis (EN)", desc: "Email PM ≤120 kata, balasan gangguan jelas, tone profesional, asumsi lengkap." },
+    { key: "contract", label: "Baca Perjanjian", desc: "Menemukan klausul bermasalah dan menulis catatan counter yang spesifik." },
+    { key: "errors", label: "Ketelitian Cek Bahan", desc: "Mendeteksi kedua kesalahan data spreadsheet dengan benar dan dampaknya." },
+    { key: "drawings", label: "Kualitas Dokumen", desc: "Meeting notes siapa+tugas+tanggal, timeline 5 fase lengkap, risk log konkret." },
+    { key: "visual", label: "Keterbacaan", desc: "Dokumen mudah dipindai: struktur konsisten, ringkas, tidak menyalin mentah." },
+    { key: "comms", label: "Komunikasi Tertulis", desc: "Email ≤120 kata, balasan gangguan jelas, update harian format standar, tone profesional." },
     { key: "time", label: "Manajemen Waktu", desc: "Submit ≤ 60 menit, tidak panik saat disruption, alokasi per tahap masuk akal." },
   ],
-  hasil: `Skor per 6 kriteria, feedback Senior Architect per item, keputusan "Offered next project" atau "Not moving forward", kredensial digital kalau lolos.`,
+  hasil: `Skor per 6 kriteria, feedback manajer per item, keputusan "Offered next project" atau "Not moving forward", kredensial digital kalau lolos.`,
   syaratKredensial: `Skor minimal 70% total DAN tidak ada kriteria di bawah 50%. Kalau tidak cukup, tidak ada kredensial, tapi laporan skor dan feedback tetap diterima.`,
   karakter: [
     {
       initials: "SC",
       role: "Project Manager",
-      style: "Ringkas, deadline mendadak, informasi kadang kurang.",
-      sample: "Septi — client request forwarded. You have 5 minutes to reply to me (not client) with: accept / reject / counter. One sentence each option. Then keep working. Clock doesn't stop. — S.",
+      style: "Singkat, langsung ke tugas, mengandalkan update tertulis.",
+      sample: "Kamu — klien minta tambahan lagi. Cek scope dulu, balas ke aku dalam 5 menit: accept / reject / counter. Satu kalimat tiap opsi. Jam jalan terus. — S.",
     },
     {
-      initials: "MW",
-      role: "Senior Architect",
-      style: "Detail, keras, tidak suka alasan.",
-      sample: "Column grid fixed to 10800 — good catch on Error 1. But you didn't adjust bedroom/wet area dims to suit. Wardrobe internal elevation missing. Emergency light per NCC required in corridor. — M. Wright",
+      initials: "RP",
+      role: "Head of Delivery",
+      style: "Detail, menilai dari dokumen, tidak suka alasan.",
+      sample: "Action item 'kirim materi' tanpa nama dan tanggal bukan action item. Itu doa. Meeting notes kamu harus bisa dibaca orang yang tidak hadir meeting. — R. Prameswari",
     },
     {
-      initials: "CL",
-      role: "Client",
-      style: "Bertele-tele, bisa ganti arah.",
-      sample: "Hi Septi, my wife and I think the bedroom needs a small desk nook. 600 deep by 1200 wide near the window. Also wet area feels tight — can we push the wall south 300? The corridor can take it, it's 1200 wide anyway. Also, budget — we need to trim 15% off the fit-out number. The numbers are getting away from us. Let me know if any of this is a problem. We trust your judgment but these are important to us. Thanks! — [Client Name]",
+      initials: "KA",
+      role: "Klien (Klien A)",
+      style: "Ramai, sering mengubah kebutuhan, sensitif soal tanggal.",
+      sample: "Kami mau launching tanggal 30. Bisa? Oh iya, tambah halaman 'Tentang Kami' sekalian ya. Dan budget promosi bisa dicairkan minggu ini? Kami mau langsung jalan iklannya.",
     },
   ],
   persiapan: [
-    "Laptop dengan software (SketchUp/D5/AutoCAD) terbuka dan siap",
+    "Laptop dengan Google Docs/Sheets dan Notion terbuka",
     "Koneksi internet stabil",
     "Ruang tenang, 60 menit penuh tanpa gangguan",
     "Folder kerja kosong sudah dibuat",
     "Notifikasi lain (WhatsApp, email, dll) dimatikan",
     "Air/minuman siap di samping",
   ],
-  startLabel: "Start — buka kontrak",
+  startLabel: "Start — buka perjanjian",
   startNote: "Timer 60 menit mulai begitu tombol ditekan.",
 };
 

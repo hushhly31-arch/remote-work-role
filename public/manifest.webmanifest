@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Remote Work Training — Nuha Simulation",
+  "name": "Remote Work Training — Simulasi Koordinator Remote",
   "short_name": "RWT Simulation",
-  "description": "Simulasi remote work 60 menit untuk arsitek — tersedia online maupun offline.",
+  "description": "Simulasi kerja remote 60 menit untuk calon Ops Coordinator, Project Coordinator, dan Trainee.",
   "start_url": "/intro",
   "scope": "/",
   "display": "standalone",
