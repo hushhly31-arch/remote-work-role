@@ -1,0 +1,62 @@
+/* Tablet */
+@media (max-width: 991px) {
+  .app-shell {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "sidebar" "topbar" "content" !important;
+  }
+  .sidebar {
+    position: static !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--border-light, #e5e7eb);
+    z-index: 50 !important;
+  }
+  .sidebar-header { padding: 0.75rem 1rem; }
+  .sidebar-nav { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 0.25rem 0.5rem 0.5rem; }
+  .stage-list { display: flex; flex-wrap: nowrap; gap: 0.25rem; padding: 0; margin: 0; }
+  .stage-list .stage-separator { display: none; }
+  .stage-item { flex: 0 0 auto; }
+  .stage-link { padding: 0.45rem 0.6rem; white-space: nowrap; }
+  .stage-title { display: inline !important; font-size: 0.8rem; }
+  .stage-status { display: none !important; }
+  .sidebar-footer { display: none; }
+  .main-wrapper { min-width: 0; }
+  .top-bar { padding: 0 1rem; gap: 0.5rem; flex-wrap: wrap; height: auto; min-height: 56px; }
+  .top-bar-right { flex-wrap: wrap; justify-content: flex-end; }
+  .content-inner { padding: 0 1rem; max-width: 100%; }
+  .page-title-main { font-size: 1.5rem; }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .top-bar { padding: 0.5rem 0.75rem; }
+  .page-title { font-size: 1rem; }
+  .timer-display { padding: 0.25rem 0.5rem; }
+  .timer-value { font-size: 0.95rem; }
+  .content { padding: 1rem 0 2rem; }
+  .content-inner { padding: 0 0.75rem; }
+  .page-header { margin-bottom: 1.25rem; }
+  .page-title-main { font-size: 1.3rem; line-height: 1.3; }
+  .section-block { margin-bottom: 1.25rem; }
+  .card-body { padding: 1rem; }
+  .document-text, p, li { overflow-wrap: anywhere; }
+  pre { white-space: pre-wrap; word-break: break-word; }
+  .intro-container { padding: 1rem 0.75rem; }
+  .intro-title { font-size: 1.5rem; }
+  .table-responsive, .section-block table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .section-block table { min-width: 520px; }
+  .d-flex { flex-wrap: wrap; }
+  img { max-width: 100%; height: auto; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .top-bar-left, .top-bar-right { width: 100%; }
+  .top-bar-right { justify-content: space-between; }
+  .page-title-main { font-size: 1.15rem; }
+  .btn { width: 100%; justify-content: center; }
+  .credential-body, .credential-scores { grid-template-columns: 1fr; }
+}

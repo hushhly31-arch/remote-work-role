@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Remote Work Training — Nuha Simulation",
+  "short_name": "RWT Simulation",
+  "description": "Simulasi remote work 60 menit untuk arsitek — tersedia online maupun offline.",
+  "start_url": "/intro",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#faf8f5",
+  "theme_color": "#1a1a2e",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/img/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
