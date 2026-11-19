@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { email, assumptions, asBuiltFindings, qaChecks, files = [], meta = {} } = req.body || {};
+    const { email, assumptions, asBuiltFindings, qaChecks, files = [], meta = {}, meetingNotes = {}, timeline = {}, dailyReport = {} } = req.body || {};
     const fileList = Array.isArray(files) ? files : [];
     const attachments = fileList.map((f) => ({
       filename: f.name || 'attachment',
@@ -28,18 +28,53 @@ export default async function handler(req, res) {
       type: f.type || 'application/octet-stream',
     }));
 
+    const actionItemLines = Array.isArray(meetingNotes.actionItems)
+      ? meetingNotes.actionItems.map((a, i) => `  ${i + 1}. [${a.owner || '-'}] ${a.task || '-'} — deadline: ${a.deadline || '-'}`).join('\n')
+      : '';
+    const timelineLines = Array.isArray(timeline.rows)
+      ? timeline.rows.map((r, i) => `  ${i + 1}. [${r.phase || '-'}] ${r.task || '-'} | PIC: ${r.owner || '-'} | ${r.start || '-'} → ${r.deadline || '-'} | ${r.status || '-'}${r.notes ? ' | ' + r.notes : ''}`).join('\n')
+      : '';
+    const riskLines = Array.isArray(timeline.riskLog)
+      ? timeline.riskLog.map((r, i) => `  ${i + 1}. ${r.risk || '-'} | dampak: ${r.impact || '-'} | cadangan: ${r.backup || '-'} | PIC: ${r.owner || '-'}`).join('\n')
+      : '';
+
     const summary = [
       `Project: TDA-2026-012 — Remote Work Training Submission`,
       `Submitted at: ${meta.submittedAt || new Date().toISOString()}`,
       `Time used: ${meta.timeUsed || 'n/a'}`,
       '',
-      'Cover Email to PM:',
+      '=== 1. MEETING NOTES — WEEKLY SYNC KLIEN A ===',
+      `Tanggal & peserta: ${meetingNotes.dateParticipants || '(empty)'}`,
+      '',
+      'Keputusan:',
+      meetingNotes.decisions || '(empty)',
+      '',
+      'Action items:',
+      actionItemLines || '(none)',
+      '',
+      'Risiko/catatan:',
+      meetingNotes.risks || '(empty)',
+      '',
+      '=== 2. TIMELINE PROYEK WEBINAR KLIEN B ===',
+      'Timeline (Fase | Task | PIC | Mulai | Deadline | Status | Catatan):',
+      timelineLines || '(none)',
+      '',
+      'Risk log:',
+      riskLines || '(none)',
+      '',
+      '=== 3. UPDATE HARIAN ===',
+      `Selesai: ${dailyReport.done || '(empty)'}`,
+      `Sedang jalan: ${dailyReport.inProgress || '(empty)'}`,
+      `Blocker: ${dailyReport.blocker || '(empty)'}`,
+      `Besok: ${dailyReport.tomorrow || '(empty)'}`,
+      '',
+      '=== 4. EMAIL RINGKASAN KE MANAJER ===',
       email || '(empty)',
       '',
-      'Assumptions:',
+      '=== 5. CATATAN & ASUMSI ===',
       assumptions || '(empty)',
       '',
-      'As-Built Errors Found:',
+      '=== 6. TEMUAN DATA SPREADSHEET ===',
       asBuiltFindings || '(empty)',
       '',
       'QA checks completed:',
